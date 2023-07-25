@@ -17,4 +17,3 @@ var c = function (a, b, c) {
 c(8, 9, 10);
 console.log(b);
 console.log(x);
-

@@ -5,4 +5,4 @@ let set =new Set(array)
 
 //Mostramos los elementos de un array
 console.log(array);
-console.log(set);  //No permite datos repetidos, pero si guarda los objetos/arrays porque ocupan distinto espacio en memoria
+console.log(set); //No permite datos repetidos, pero si guarda los objetos/arrays porque ocupan distinto espacio en memoria

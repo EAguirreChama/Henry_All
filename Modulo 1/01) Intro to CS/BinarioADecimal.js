@@ -3,7 +3,6 @@
 // 100101010010101001010 => si termina en 0 >>> Es par
 //                          si termina en 1 >>> Es impar
 
-
 //Ejemplo para pasar de Binario a Decimal
 
 // Binario       1            0            1        => Impar

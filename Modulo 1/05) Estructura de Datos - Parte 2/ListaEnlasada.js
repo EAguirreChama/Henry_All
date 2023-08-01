@@ -30,7 +30,7 @@ LinkedList.prototype.add = function (element) { //5
 
     current.next = node
     return node
-}
+};
 
 //Metodo para contar los nodos
 LinkedList.prototype.size = function () {

@@ -51,7 +51,7 @@ function mergeSort(array) {
   }
   array = array.concat(left, right)
   return array
-}
+};
 
 // No modificar nada debajo de esta línea
 // --------------------------------

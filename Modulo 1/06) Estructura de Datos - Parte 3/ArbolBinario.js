@@ -26,7 +26,7 @@ BusquedaBinaria.prototype.insert = function (valor) {//2
             this.right = new BusquedaBinaria (valor)
         }
     }
-}
+};
 
 const MiArbolito = new BusquedaBinaria(5) //Nueva Instancia
 MiArbolito.insert (2)

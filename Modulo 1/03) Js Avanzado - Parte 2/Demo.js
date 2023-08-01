@@ -23,5 +23,3 @@ var SaludarHi = Saludar("Hi") //Se debe crear una nueva variable
 SaludarHi("Camila")
 SaludarHi("Ernesto")
 SaludarHi("Fabrizio")
-
-

@@ -1,5 +1,4 @@
 'use strict';
-
 // Closures
 
 /* Ejercicio 1
@@ -35,7 +34,6 @@ la próxima vez que reciba el mismo argumento, no sea necesario volver a invocar
   function square(n){
     return n * n
   }
-
   const squareCache = cacheFunction(square)
 
   squareCache(5)    // invocará a square(5), almacenará el resultado y lo retornará
@@ -69,7 +67,6 @@ function cacheFunction(cb) {
 //----------------------------------------
 
 // Bind
-
 var instructor = {
    nombre: 'Franco',
    edad: 25,
@@ -105,13 +102,11 @@ let getNombreAlumno = getNombre.bind(alumno);
 function crearCadena(delimitadorIzquierda, delimitadorDerecha, cadena) {
     return delimitadorIzquierda + cadena + delimitadorDerecha;
 }
-
 let textoAsteriscos = crearCadena.bind(this, "*" , "*",); //El primer lugar tiene que estar ocupado con cualquier cosa, porque no hay un this
 let textoGuiones = crearCadena.bind("ernesto", "-" , "-");
 let textoUnderscore = crearCadena.bind(this, "_" , "_");
 
 //Cuando usamos bind, se dice que se bidean los argumentos (es decir que pasamos los argumentos mediante el bind)
-
 // No modifiquen nada debajo de esta linea
 // --------------------------------
 

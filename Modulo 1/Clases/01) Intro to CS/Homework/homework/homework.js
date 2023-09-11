@@ -15,7 +15,6 @@ function BinarioADecimal(num) { // "110"
    // Forma 2
    num = num.split("").reverse()
    var Suma = 0;
-
    for (var i = 0 ; i < num.length ; i++) {
       Suma += num[i]*2**i
    }
@@ -25,7 +24,6 @@ function BinarioADecimal(num) { // "110"
    // let Numero = String(num).split("")
    // let Posición = 0;
    // let Total = 0;
-
    // for (let i = Numero.length - 1 ; i >= 0 ; i--) {
    //    Total += (2**Posición)*Numero[i]
    //    Posición++
@@ -51,7 +49,6 @@ function DecimalABinario(num) { // 9
    // }
    // return Restos.reverse().join("")
 }
-
 module.exports = {
    BinarioADecimal,
    DecimalABinario,

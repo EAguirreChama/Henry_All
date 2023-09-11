@@ -4,10 +4,8 @@ function a() {
         return this;
     }
     return b();
-}
-
+};
 console.log(a());
-
 //Metodo de un objeto
 var Objeto = {
     Prop: "Tengo 21 años",
@@ -15,5 +13,4 @@ var Objeto = {
         return this.Prop;
     }
 };
-
 console.log(Objeto.f());

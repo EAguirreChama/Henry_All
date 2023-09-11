@@ -5,12 +5,12 @@ var Global = "Hola"
 function a () {
     console.log(Global);
     Global = "Hello"
-}
+};
 //Declaración de función
 function b () {
     var Global = "Chau"
     console.log(Global);
-}
+};
 //Ejecución de función
 a()
 b()

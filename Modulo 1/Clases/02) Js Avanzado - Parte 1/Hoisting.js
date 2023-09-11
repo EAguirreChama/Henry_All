@@ -1,5 +1,4 @@
 //Hoisting >>> solo variables con VAR y funciones
-
 Saludo ()
 console.log (Hola)
 

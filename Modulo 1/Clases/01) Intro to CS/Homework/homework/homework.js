@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 function BinarioADecimal(num) { // "110"
    // //Forma 1
@@ -49,7 +49,8 @@ function DecimalABinario(num) { // 9
    // }
    // return Restos.reverse().join("")
 }
+
 module.exports = {
    BinarioADecimal,
    DecimalABinario,
-};
+}

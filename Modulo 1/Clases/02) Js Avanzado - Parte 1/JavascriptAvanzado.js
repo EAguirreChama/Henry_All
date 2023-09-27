@@ -6,13 +6,13 @@ function Person () {
 
     function firstName (){ 
         return Name 
-    };
+    }
 
     function lastName () {
         return Last
-    };
+    }
 
-    console.log(En + " " + firstName() + " " + lastName());
-};
+    console.log(En + " " + firstName() + " " + lastName())
+}
 
 Person()

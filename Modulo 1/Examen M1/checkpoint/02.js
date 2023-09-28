@@ -8,7 +8,6 @@
 // si no hay inconvenientes, devolverlos para que sepa el total que debe pagar.
 //
 //
-//
 // EJEMPLOS:
 // [1,2,3,4,5] => 15
 // {} => "Error"
@@ -40,11 +39,10 @@ const calcularImpuestos = (factura, i = 0, acc = 0) => {
     //Se retorna el Numero con el metodo .toFixed para cuente tambien hasta dos decimales
     return Number(acc.toFixed(2))
   }
+  // Termine el 2
 }
-// Termine el 2
-
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   calcularImpuestos
-};
+}

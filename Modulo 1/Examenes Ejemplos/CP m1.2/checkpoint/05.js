@@ -25,4 +25,4 @@ function liquidacion(array) {
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   liquidacion,
-};
+}

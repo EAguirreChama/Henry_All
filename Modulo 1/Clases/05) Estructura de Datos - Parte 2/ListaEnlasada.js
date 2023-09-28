@@ -1,18 +1,18 @@
 //ListaEnlasada
-
 //DosInstancias >>> La lista en si y otra para los nodos
 
 function LinkedList () {
-    this.head = null;
+    this.head = null
 }
 
 function Node(element) {//5
-    this.value = element;
-    this.next = null;
+    this.value = element
+    this.next = null
 }
 
 //Metodo que se encarga de enganchar los nodos
 LinkedList.prototype.add = function (element) { //5
+    
     //Se crea una instancia con New (instancia de la clase) (una caja con value y next) (cada vez que hacemos un new Node)
     //Instancias, clases y funciones constructoras siempre con Mayusculas
 
@@ -27,20 +27,21 @@ LinkedList.prototype.add = function (element) { //5
     while(current.next !== null) {
         current = current.next    
     }
-
     current.next = node
     return node
-};
+}
 
 //Metodo para contar los nodos
 LinkedList.prototype.size = function () {
+    
     //Se utiliza current para ir recorriendo porque es nuestro puntero
     let current = this.head // Head { Node: {value: 5, next: Node: {value: 7, next: Node: {value: 2, next: null} } } } 
+    
     //Declarar contador
     let contador = 0
 
     if(current === null) {
-        console.log ("La lista está vacía");
+        console.log ("La lista está vacía")
         return
     }
 
@@ -49,7 +50,6 @@ LinkedList.prototype.size = function () {
         contador++
         current = current.next
     }
-    
     return contador
 }
 
@@ -58,4 +58,4 @@ console.log (NewList.add(5)) // LinkedList { Node: {value: 5, next: null} }
 console.log (NewList.add(7)) // LinkedList { Node: {value: 7, next: null} }
 console.log (NewList.add(2)) // LinkedList { Node: {value: 2, next: null} }
 console.log (NewList)
-console.log (NewList.size());
+console.log (NewList.size())

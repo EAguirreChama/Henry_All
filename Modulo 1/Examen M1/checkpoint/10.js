@@ -1,9 +1,6 @@
 const { BinarySearchTree } = require("../DS");
 // ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️
 //
-//
-//
-//
 // 🔟 ***** EJERCICIO 10 ***** - BinarySearchTree.spotHousePrices() 🔟 
 // Agregar al prototype de BinarySearchTree el método spotHouseValues(), el cual deberá retornar un array con los
 // valores del árbol que sean mayores al número recibido por parámetros.
@@ -39,11 +36,11 @@ BinarySearchTree.prototype.spotHousePrices = function (num, arr = []) {
     if (this.right) {
       this.right.spotHousePrices(num, arr)
     }
-    return arr;
+    return arr
+    //Termine todo
   }
-  //Termine todo
 
   // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
   module.exports = {
     BinarySearchTree
-  };
+  }

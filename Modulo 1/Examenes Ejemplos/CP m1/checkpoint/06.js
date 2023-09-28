@@ -37,10 +37,10 @@ function ordenarPedidos(tragos) {
       }
     }
   }
-  return tragos;
+  return tragos
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
    ordenarPedidos,
-};
+}

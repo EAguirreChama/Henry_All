@@ -1,7 +1,6 @@
 const { LinkedList } = require('../DS');
 // ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️
 //
-//
 // 8️⃣ ** EJERCICIO 8 LINKEDLIST** - tacharLista() 8️⃣ 
 // 
 // Llegó la hora de revisar el catálogo de ropa disponible! tendremos que tachar las que hayan se hayan agotado
@@ -26,11 +25,8 @@ const { LinkedList } = require('../DS');
 LinkedList.prototype.tacharLista = function(lista) {
   // Tu código aquí:
 }
-  
-  
-
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   LinkedList
-};
+}

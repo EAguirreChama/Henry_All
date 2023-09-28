@@ -32,7 +32,7 @@ LinkedList.prototype.encontrarPedidoRepetido = function (nombre) {
    }
    if (nuevaLista.head) return nuevaLista;
    return false
-};
+}
 
 // ⚠️ NO MODIFICAR NADA DEBAJO DE ESTA LINEA ⚠️
-module.exports = LinkedList;
+module.exports = LinkedList

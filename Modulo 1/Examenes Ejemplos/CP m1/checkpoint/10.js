@@ -42,9 +42,9 @@ BinarySearchTree.prototype.enOrden = function (array = []) {
    if (this.right) this.right.enOrden(array)
 
    return array;
-};
+}
 
 //  ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
    BinarySearchTree,
-};
+}

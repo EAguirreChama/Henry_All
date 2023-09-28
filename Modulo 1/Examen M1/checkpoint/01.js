@@ -51,11 +51,11 @@ function henryParty(arr) {
   if (NuevaQueue.size() === 0) return false
   //Se retorna la NuevaQueue
   return NuevaQueue
-
+  
   //Termine el 1
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   henryParty
-};
+}

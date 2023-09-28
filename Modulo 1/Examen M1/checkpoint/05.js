@@ -1,9 +1,6 @@
 const { Stack } = require("../DS");
 // ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️
 //
-//
-//
-//
 // 5️⃣ ***** EJERCICIO 5 ***** - tipologiasSeparadas() 5️⃣
 // En este ejercicio debemos implementar la funcion tipologiasSeparadas() 
 // la cual va a recibir por parametro un array con el numeros de tipologias en el orden que se van a construir.
@@ -51,11 +48,11 @@ function tipologiasSeparadas(arr) {
   //Se crea una ultima condición que en caso de que el aux se encuentre vacio retorne la siguiente oración
   if (!aux.length) return "No hay tipologias repetidas"
   //Por ultimo se retorna la nueva instancia
-  return NewStack;
+  return NewStack
+  // Termine el 5
 }
-// Termine el 5
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   tipologiasSeparadas,
-};
+}

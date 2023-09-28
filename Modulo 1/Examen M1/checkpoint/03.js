@@ -1,8 +1,5 @@
 // ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️
 //
-//
-//
-//
 // 3️⃣ ***** EJERCICIO 3 ***** - casasPorAño() 3️⃣
 // En este ejercicio debemos implementar la función casasPorAño(), la cual debe retornar
 // cuantas casas por año se construyeron.
@@ -25,7 +22,6 @@
 
 function casasPorAño(n) {
   // Tu código aquí:
-
   //Se crea una condición que en caso de que el numero pasado por parametro sea menor a 0, retorne false
   if (n < 0) return false
   //Se crea una siguiente condición que en caso de que el numero pasado por parametro sea igual a 1, retorne 30
@@ -34,10 +30,10 @@ function casasPorAño(n) {
   //Se utiliza la formula pasada por consigna
   //Se vuelve a llamar la función
   return casasPorAño(n-1) + casasPorAño(n/n);
+  // Termine el 3
 }
-// Termine el 3
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   casasPorAño,
-};
+}

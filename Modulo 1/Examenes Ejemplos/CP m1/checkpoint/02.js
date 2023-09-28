@@ -50,4 +50,4 @@ function prepararMenú(tragos, tiempos, tiempoLimite) {
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
-module.exports = prepararMenú;
+module.exports = prepararMenú

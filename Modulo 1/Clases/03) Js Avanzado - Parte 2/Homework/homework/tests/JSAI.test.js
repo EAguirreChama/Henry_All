@@ -41,14 +41,14 @@ describe('counter', () => {
 describe('cacheFunction(cb)', function() {
  const cb = function(x) {
    return x * 2;
- };
+ }
  it('should return the callback function', function() {
    expect(typeof cacheFunction(cb)).toEqual('function');
- });
+ })
  it('should return the callback functions result when the cached function is invoked', function() {
    const cachedFunction = cacheFunction(cb);
    expect(cachedFunction(5)).toBe(10);
- });
+ })
  it('should cache function results', function() {
   const cachedFunction = cacheFunction(cb);
   var resultOne = cachedFunction(2);
@@ -57,7 +57,7 @@ describe('cacheFunction(cb)', function() {
   expect(resultTwo).toBe(6);
   var resultTwo = cachedFunction(2);
   expect(resultTwo).toBe(4);
-});
+})
  it('should avoid calling cb function when not necessary', function() {
    const cb = jest.fn();
    const cachedFunction = cacheFunction(cb);
@@ -71,23 +71,23 @@ describe('cacheFunction(cb)', function() {
    cachedFunction(10);
    cachedFunction(10);
    expect(cb).toHaveBeenCalledTimes(2);
- });
-});
+ })
+})
 
 describe('Bind', function() {
  it('should return the correct name "Franco"', function() {
    expect(getNombreInstructor()).toEqual('Franco');
- });
+ })
  it('should return the correct name "Juan"', function() {
    expect(getNombreAlumno()).toEqual('Juan');
- });
+ })
  it('should return the correct string "*Hola*"', function() {
    expect(textoAsteriscos('Hola')).toEqual('*Hola*');
- });
+ })
  it('should return the correct string "-Hola-"', function() {
    expect(textoGuiones('Hola')).toEqual('-Hola-');
- });
+ })
  it('should return the correct string "_Hola_"', function() {
    expect(textoUnderscore('Hola')).toEqual('_Hola_');
- });
-});
+ })
+})

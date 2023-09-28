@@ -2,9 +2,9 @@
 var CreaFuncion = function () {
     var array = [] 
 // [ 
-                // function () { console.log(i);} (cuando i = 0) ; 
-                // function () { console.log(i);} (cuando i = 1) ; 
-                // function () { console.log(i);} (cuando i = 2) ;
+                // function () { console.log(i);} (cuando i = 0) 
+                // function () { console.log(i);} (cuando i = 1)  
+                // function () { console.log(i);} (cuando i = 2) 
 // ]
 
     for (var i = 0 ; i < 3 ; i++) {
@@ -18,9 +18,9 @@ var CreaFuncion = function () {
 
 var Funciones = CreaFuncion () // Si llamo una función tengo el valor de retorno, es decir >>> array
 // [ 
-                // function () { console.log(i);} (cuando i = 0) ; 
-                // function () { console.log(i);} (cuando i = 1) ; 
-                // function () { console.log(i);} (cuando i = 2) ;
+                // function () { console.log(i);} (cuando i = 0) 
+                // function () { console.log(i);} (cuando i = 1)  
+                // function () { console.log(i);} (cuando i = 2) 
 // ]
 
 Funciones [0] () // Queda el valor i = 3

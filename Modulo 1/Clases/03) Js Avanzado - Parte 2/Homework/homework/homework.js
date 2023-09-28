@@ -118,4 +118,4 @@ module.exports = {
    textoAsteriscos,
    textoGuiones,
    textoUnderscore,
-};
+}

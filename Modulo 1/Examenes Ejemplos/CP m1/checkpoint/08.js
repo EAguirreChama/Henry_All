@@ -2,7 +2,6 @@ const { LinkedList } = require('../DS');
 
 /* ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️
 
-
 8️⃣ ***** EJERCICIO 8 LINKEDLIST ***** - entregarPedido() 8️⃣ 
 
 Debemos encontrar a los clientes que nos pasan por props. Si están incluidos en nuestra lista enlazada, 
@@ -38,9 +37,9 @@ LinkedList.prototype.entregarPedido = function (clientes) {
       current = current.next
    }
    return nuevaLista;
-};
+}
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
    LinkedList,
-};
+}

@@ -40,10 +40,10 @@ LinkedList.prototype.sliceRooms = function (firstIndex, secondIndex) {
   if (guardar) return false
   if (!NuevaLista.head) return false
   return NuevaLista
+  //Termine el 8
 }
-//Termine el 8
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   LinkedList
-};
+}

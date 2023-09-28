@@ -29,4 +29,4 @@ function chequearDisponibilidad(ropas) {
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   chequearDisponibilidad,
-};
+}

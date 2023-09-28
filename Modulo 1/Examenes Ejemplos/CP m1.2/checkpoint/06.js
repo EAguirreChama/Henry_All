@@ -4,7 +4,6 @@
 // un array de objetos anidados, que representarán cada prenda. Cada objeto tendrá dentro una propiedad nombre y un precio entero.
 // Tendrás que implementar un algoritmo de ordenamiento para poder organizar toda la ropa de MAYOR a MENOR según el precio.
 //
-//
 // EJEMPLOS:
 // Dado el siguiente arreglo:
 // [{ nombre: 'Camiseta', precio: 12}, { nombre: 'Pantalon', precio: 2 }, { nombre: 'Saco', precio: 23 }, { nombre: 'Gorra', precio: 4 }]
@@ -23,4 +22,4 @@ function ordenarRopa(ropa) {
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   ordenarRopa
-};
+}

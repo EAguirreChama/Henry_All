@@ -141,11 +141,10 @@ BinarySearchTree.prototype.size = function() {
   return 1 + this.left.size() + this.right.size();
 }
 
-
 module.exports = {
   Queue,
   Stack,
   Node,
   LinkedList,
   BinarySearchTree
-};
+}

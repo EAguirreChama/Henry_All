@@ -1,17 +1,17 @@
-import * as actions from "../src/redux/actions/index";
-import * as data from "../db.json";
+import * as actions from "../src/redux/actions/index"
+import * as data from "../db.json"
 
-import { Link, MemoryRouter } from "react-router-dom";
-import { configure, mount } from "enzyme";
+import { Link, MemoryRouter } from "react-router-dom"
+import { configure, mount } from "enzyme"
 
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import CharacterCardConnected from "../src/components/CharacterCard/CharacterCard";
-import { Provider } from "react-redux";
-import React from "react";
-import configureStore from "redux-mock-store";
-import thunk from "redux-thunk";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17"
+import CharacterCardConnected from "../src/components/CharacterCard/CharacterCard"
+import { Provider } from "react-redux"
+import React from "react"
+import configureStore from "redux-mock-store"
+import thunk from "redux-thunk"
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
 jest.mock('../src/redux/actions/index', () => ({
   deleteCharacter: () => ({

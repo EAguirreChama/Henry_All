@@ -1,7 +1,7 @@
-import * as actions from "../src/redux/actions";
-import * as data from "../db.json";
+import * as actions from "../src/redux/actions"
+import * as data from "../db.json"
 
-import { configure, mount } from "enzyme";
+import { configure, mount } from "enzyme"
 
 import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import CreateCharacter from "../src/components/CreateCharacter/CreateCharacter";

@@ -1,4 +1,4 @@
-const sum = require('./sum');
+const sum = require('./sum')
 
 describe('Integer numbers', () => {
   it('should return 8 if adding 3 and 5', () => {

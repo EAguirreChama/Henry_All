@@ -134,5 +134,4 @@ describe("<Home />", () => {
     expect(shipCard(ship[1]).find("img").prop("alt")).toEqual(ship[1].name)
     expect(shipCard(ship[2]).find("img").prop("alt")).toEqual(ship[2].name)
   });
-
 });

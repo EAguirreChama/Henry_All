@@ -4,6 +4,7 @@ export const GET_ALL_BANDS = 'GET_ALL_BANDS';
 export const GET_BAND_DETAILS = 'GET_BAND_DETAILS';
 export const CREATE_BANDS = 'CREATE_BANDS';
 export const DELETE_BANDS = 'DELETE_BANDS';
+
 // 🟢 getAllBands:
 // Esta función debe realizar una petición al Back-End. Luego despachar una action con la data recibida.
 // End-Point: 'http://localhost:3001/bands'.
@@ -45,7 +46,7 @@ export const createBands = (bands) => {
     id++;
     return {
         type: CREATE_BANDS,
-        payload,
+        payload
     };
 };
 

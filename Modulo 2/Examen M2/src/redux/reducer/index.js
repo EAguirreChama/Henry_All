@@ -46,7 +46,7 @@ const rootReducer = (state = initialState, action) => {
    case CREATE_BANDS:
       return{
          ...state,
-         bands: [...state.bands, action.payload]
+         bands: [...state.bands, action.payload] 
       };
    case DELETE_BANDS:
       const deleteBan = state.bands.filter(

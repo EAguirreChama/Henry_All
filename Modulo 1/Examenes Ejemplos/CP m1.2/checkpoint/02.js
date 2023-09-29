@@ -1,9 +1,6 @@
 const Stack = require("../DS").Stack;
 // ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️
 //
-//
-//
-//
 // 2️⃣ ***** EJERCICIO 2 STACK***** - apilarPantalones() 2️⃣ 
 // 
 // Un cliente ha solicitado pantalones de una talla determinada. Es necesario ir a buscar al inventario los pantalones y obtener
@@ -43,9 +40,7 @@ function apilarPantalones(array, talla) {
   return Obj;
 }
 
-
-
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   apilarPantalones
-};
+}

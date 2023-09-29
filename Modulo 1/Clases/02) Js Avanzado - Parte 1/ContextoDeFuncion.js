@@ -1,19 +1,18 @@
 // Simple Call
 function a() {
     function b() {
-        return this;
+        return this
     }
-    return b();
+    return b()
 }
-
-console.log(a());
+console.log(a())
 
 //Metodo de un objeto
 var Objeto = {
     Prop: "Tengo 21 años",
     f: function () {
-        return this.Prop;
+        return this.Prop
     }
-};
+}
 
-console.log(Objeto.f());
+console.log(Objeto.f())

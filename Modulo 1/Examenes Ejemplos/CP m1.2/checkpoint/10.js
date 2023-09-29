@@ -1,9 +1,6 @@
 const { BinarySearchTree } = require('../DS');
 // ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️
 //
-//
-//
-//
 // 🔟 ***** EJERCICIO 10 BINARYSEARCHTREE***** - BinarySearchTree.vender() 🔟 
 // Llegó la hora! el primer cliente se dispone a realizar la primera compra de la tienda.
 // Para poder vendérsela, tendrás que agregar al prototype de BinarySearchTree, el método 💰 vender() 💰,
@@ -36,9 +33,9 @@ const { BinarySearchTree } = require('../DS');
 
 BinarySearchTree.prototype.vender = function (array) {
     // Tu código aquí:
-  }
+}
   
-  // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
-  module.exports = {
+// ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
+module.exports = {
     BinarySearchTree
-  };
+}

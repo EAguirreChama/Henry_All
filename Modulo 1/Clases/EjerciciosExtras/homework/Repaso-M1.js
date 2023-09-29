@@ -23,9 +23,8 @@ var countArray = function(array) {
         }
         else suma += array[i]
     }
-    return suma;
+    return suma
 }
-
 
 // Implementar la función countProps: a partir de un objeto en el cual cada propiedad puede contener
 // cualquier tipo de dato, determinar la cantidad de propiedades de objetos en cualquier nivel, ya sea el inicial
@@ -58,9 +57,8 @@ var countProps = function(obj) {
             }
         }
     }
-    return contador;
+    return contador
 }
-
 
 // Implementar el método changeNotNumbers dentro del prototype de LinkedList que deberá cambiar
 // aquellos valores que no puedan castearse a numeros por 'Kiricocho' y devolver la cantidad de cambios que hizo
@@ -87,9 +85,8 @@ LinkedList.prototype.changeNotNumbers = function(){
         // Piso la referencia
         current = current.next 
     }
-    return contador;
+    return contador
 }
-
 
 // Implementar la función mergeQueues que a partir de dos queues recibidas por parametro
 // debe devolver una nueva Queue que vaya mergeando los nodos de las anteriores.
@@ -111,7 +108,6 @@ var mergeQueues = function(queueOne, queueTwo) {
     }
     return NewQueue;
 }
-
 
 // Implementar la funcion closureMult que permita generar nuevas funciones que representen
 // las tablas de multiplicación de distintos numeros

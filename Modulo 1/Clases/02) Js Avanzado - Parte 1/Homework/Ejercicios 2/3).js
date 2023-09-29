@@ -1,5 +1,7 @@
-var instructor = 'Tony';
+var instructor = 'Tony'
+
 if (true) {
-   var instructor = 'Franco';
+   var instructor = 'Franco'
 }
+
 console.log(instructor);

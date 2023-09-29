@@ -1,5 +1,4 @@
-//
-// 6️⃣ ***** EJERCICIO 6 ***** - sortPrimeHouses() 6️⃣
+//6️⃣ ***** EJERCICIO 6 ***** - sortPrimeHouses() 6️⃣
 // 
 // Implementar un algoritmo de ordenamiento, que además de ordenar un array de menor a mayor,
 // retorne false si un número dentro del array no es primo
@@ -36,10 +35,10 @@ function sortPrimeHouses(array) {
     }
   }
   return array
+  //Termine el 6
 }
-//Termine el 6
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   sortPrimeHouses
-};
+}

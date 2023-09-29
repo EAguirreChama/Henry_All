@@ -1,7 +1,6 @@
 const { LinkedList } = require('../DS');
 // ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️
 //
-//
 // 7️⃣ ***** EJERCICIO 7 ***** - LinkedList.migrarStock() 7️⃣ 
 //  La tienda de ropa necesita migrar sus datos de stock de una lista a un objeto.
 //  Para esto deberás agregar al prototype de LinkedList el método 📦 migrarStock() 📦, el cual deberá retornar todos los valores almacenados
@@ -27,4 +26,4 @@ LinkedList.prototype.migrarStock = function () {
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   LinkedList
-};
+}

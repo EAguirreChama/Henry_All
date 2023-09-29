@@ -1,8 +1,6 @@
 const { BinarySearchTree } = require("../DS");
 // ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️
-//
-//
-//
+// 
 // 9️⃣ ***** EJERCICIO 9 BINARYSEARCHTREE***** - BinarySearchTree.obtenerPrendas() 9️⃣
 //
 // Te han mandado a recoger una determinada prenda del inventario! Tendrás que buscar sobre el mismo
@@ -37,8 +35,9 @@ const { BinarySearchTree } = require("../DS");
 
 BinarySearchTree.prototype.obtenerPrendas = function (string) {
   // Tu código aquí:
-};
+}
+
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   BinarySearchTree,
-};
+}

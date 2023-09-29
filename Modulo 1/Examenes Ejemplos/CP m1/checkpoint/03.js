@@ -48,10 +48,10 @@ function consultarPreparacion(tragos) {
     } else {
       return "Por favor verifique bien los nombres de los tragos que quiere solicitar su preparación"
     }
-  };
+  }
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
    consultarPreparacion,
-};
+}

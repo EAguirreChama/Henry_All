@@ -1,4 +1,3 @@
-
 // Implementar la función countArray: a partir de un array en el cual cada posición puede ser un único
 // número u otro array anidado de números, determinar la suma de todos los números contenidos en el array.
 // El array será recibido por parámetro.
@@ -55,11 +54,6 @@ var countArray = function(array) {
 //avanza i   i = 7
 //else suma = 21 + 7 
 //avanza i no hay nada que recorrer, retorna suma = 28
-
-
-
-
-
 
 // Implementar la función countProps: a partir de un objeto en el cual cada propiedad puede contener
 // cualquier tipo de dato, determinar la cantidad de propiedades de objetos en cualquier nivel, ya sea el inicial
@@ -124,7 +118,6 @@ LinkedList.prototype.changeNotNumbers = function(){
     return suma; // 1 la cantidad de cambios que hubo
 }
 
-
 // Implementar la función mergeQueues que a partir de dos queues recibidas por parametro
 // debe devolver una nueva Queue que vaya mergeando los nodos de las anteriores.
 // Ejemplo:
@@ -155,7 +148,6 @@ var mergeQueues = function(queueOne, queueTwo) {
     //}
     //return newArr
 }
-
 
 // Implementar la funcion closureMult que permita generar nuevas funciones que representen
 // las tablas de multiplicación de distintos numeros

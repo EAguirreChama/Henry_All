@@ -9,7 +9,6 @@ consistirá en resolver varios problemas que surgieron en un bar.
 Tendrás que resolver cada uno de ellos, aplicando los conceptos aprendidos durante el módulo uno.
 🍀 ¡Suerte! 🍀
 
-
 1️⃣ ***** EJERCICIO 1 QUEUE ***** - guardarTragos() 1️⃣
 
 Ha llegado un nuevo pedido de tragos. Es necesario recogerlos a todos y guardarlos dentro de la barra.
@@ -53,8 +52,8 @@ function guardarTragos(tragosQueue) {
       Obj[Nombre].cantidad++
     }
   } 
-  return Obj;
+  return Obj
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
-module.exports = guardarTragos;
+module.exports = guardarTragos

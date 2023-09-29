@@ -1,8 +1,5 @@
 // ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️
 //
-//
-//
-//
 // 4️⃣ ***** EJERCICIO 4 ***** - construccionCasas() 4️⃣
 // En este ejercicio debemos implementar la función construccionCasas() la cual nos va a determinar
 // cuantas casas se pueden construir segun la cantidad de bolsas de cemento que dispongamos.
@@ -49,10 +46,10 @@ function construccionCasas(bolsas) {
       return true;
     }
   }
+  // Termine el 4
 }
-// Termine el 4
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   construccionCasas,
-};
+}

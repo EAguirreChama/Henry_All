@@ -39,10 +39,10 @@ BinarySearchTree.prototype.getHouseValues = function (side, total = 0) {
     }
   }
   return total
+  // Termine el 9
 }
-// Termine el 9
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   BinarySearchTree
-};
+}

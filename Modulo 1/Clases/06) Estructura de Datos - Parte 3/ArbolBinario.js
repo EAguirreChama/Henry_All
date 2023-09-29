@@ -26,32 +26,32 @@ BusquedaBinaria.prototype.insert = function (valor) {//2
             this.right = new BusquedaBinaria (valor)
         }
     }
-};
+}
 
 const MiArbolito = new BusquedaBinaria(5) //Nueva Instancia
 MiArbolito.insert (2)
-console.log(MiArbolito);
-console.log(BusquedaBinaria);
+console.log(MiArbolito)
+console.log(BusquedaBinaria)
 
 BusquedaBinaria.prototype.depthFirstForEach = function (cb, pedido) {
     // pedido >>> "In-order" (left, root, right)
     if (pedido === "In-order") { 
-        if (this.left && this.left.depthFirstForEach(cb, pedido)); //Si hay algo a la izquierda, entonces hace recursion
-        cb (this.root); //Crea un array y agrega los datos
-        if (this.right && this.right.depthFirstForEach(cb, pedido));//Si hay algo a la derecha, entonces hace recursion
+        if (this.left && this.left.depthFirstForEach(cb, pedido)) //Si hay algo a la izquierda, entonces hace recursion
+        cb (this.root) //Crea un array y agrega los datos
+        if (this.right && this.right.depthFirstForEach(cb, pedido)) //Si hay algo a la derecha, entonces hace recursion
     }
 
     // pedido >>> "Pre-order" (root, left, right)
     if (pedido === "Pre-order") {
-        cb (this.root);
-        if (this.left && this.left.depthFirstForEach(cb, pedido));
-        if (this.right && this.right.depthFirstForEach(cb, pedido));
+        cb (this.root)
+        if (this.left && this.left.depthFirstForEach(cb, pedido))
+        if (this.right && this.right.depthFirstForEach(cb, pedido))
     }
 
     // pedido >>> "Post-order" (left, right, root)
     if (pedido === "Post-order") {
-        if (this.left && this.left.depthFirstForEach(cb, pedido));
-        if (this.right && this.right.depthFirstForEach(cb, pedido));
-        cb (this.root);
+        if (this.left && this.left.depthFirstForEach(cb, pedido))
+        if (this.right && this.right.depthFirstForEach(cb, pedido))
+        cb (this.root)
     }
 }

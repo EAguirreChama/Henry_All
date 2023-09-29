@@ -1,6 +1,6 @@
 'use strict'
 
-var sayHello = 'Hello';
+var sayHello = 'Hello'
 
 function     person() {
     var first = 'David';
@@ -12,5 +12,5 @@ function     person() {
     function lastName() {
         return last;
     } 
-    alert(sayHello + ' ' + firstName() + ' ' + lastName());
+    alert(sayHello + ' ' + firstName() + ' ' + lastName())
 }

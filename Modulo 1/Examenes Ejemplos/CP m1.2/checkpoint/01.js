@@ -8,7 +8,6 @@ const Queue = require("../DS").Queue;
 // Tendrás que resolver cada uno de ellos, aplicando los conceptos aprendidos durante el Módulo Uno.
 // 🍀 Suerte!!! 🍀
 //
-//
 // 1️⃣ ***** EJERCICIO 1 QUEUE ***** - guardarCamisetas 1️⃣
 // 
 // Ha llegado un camión con un nuevo lote de camisetas, es necesario recoger todas y guardarlas en dentro de la tienda.
@@ -44,8 +43,7 @@ function guardarCamisetas(ropaQueue) {
   return obj;
 }
 
-
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   guardarCamisetas
-};
+}

@@ -1,4 +1,4 @@
-(6 / "3");        // Js obliga a transforma a "3" en number >>> 2
+(6 / "3")         // Js obliga a transforma a "3" en number >>> 2
 "2" * "3"         // Operacion matematica, obliga a transformar a ambos en number >>> 6
 4 + 5 + "px"      // 9 y va a concatenar con el string y vuelve todo en string >>> "9px"
 "$" + 4 + 5       // Se tiene un String y se concatena el resto >>> "$45"
@@ -13,4 +13,4 @@ parseInt("09")    // convierte a 9
 0 || 5            // da 5 (misma razon)
 [3]+[3]-[10]      // concatena el [3] y [3] , luego transforma el resultado en string (33) y despues vuelve el array en numero >>> 23
 3>2>1             // false (porque 3 si es mayor a 2, devuelve true. true es igual a 1 y 1 no es mayor que 1)
-[l] == ![]         // true (son distintos espacios de memoria, y da true porque estamos negando) (los arrays estan en distinto lugar)
+[l] == ![]        // true (son distintos espacios de memoria, y da true porque estamos negando) (los arrays estan en distinto lugar)

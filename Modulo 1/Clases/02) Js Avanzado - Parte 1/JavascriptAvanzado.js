@@ -12,7 +12,7 @@ function Person () {
         return Last
     }
 
-    console.log(En + " " + firstName() + " " + lastName());
+    console.log(En + " " + firstName() + " " + lastName())
 }
 
 Person()

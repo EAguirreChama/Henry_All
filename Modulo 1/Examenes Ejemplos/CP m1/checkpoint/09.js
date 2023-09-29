@@ -47,10 +47,10 @@ BinarySearchTree.prototype.consultarTragos = function (efectivo, array = []) {
   if (this.right) {
     this.right.consultarTragos(efectivo, array)
   }
-  return array;
-};
+  return array
+}
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
    BinarySearchTree,
-};
+}

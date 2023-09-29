@@ -3,7 +3,6 @@
 Implementar una función llamada 🍹 encontrarTragoPopular 🍹 que reciba como parámetro un objeto de tragos.
 a función debe utilizar recursión para recorrer el objeto y encontrar el trago con la mayor cantidad vendida. La función debe devolver el el trago más popular y además crearle la propiedad tragoMasVendido con el valor en true.
 
-
 📝 EJEMPLO 📝 
 (INPUT) ➡ 
 tragos = {"trago1": {"nombre": "Margarita", "cantidadVendida": 20},
@@ -27,9 +26,8 @@ REQUISITOS
 */
 
 function encontrarTragoPopular(tragos) {
-   // Tu código aquí:
-   
+   // Tu código aquí: 
 }
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
-module.exports = encontrarTragoPopular;
+module.exports = encontrarTragoPopular

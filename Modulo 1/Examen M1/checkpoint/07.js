@@ -1,8 +1,6 @@
 const { LinkedList } = require("../DS");
 // ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️
 //
-//
-//
 // 7️⃣ ***** EJERCICIO 7 ***** - LINKEDLIST.mapHouses() 7️⃣ 
 // 
 // Agregar al prototype de LinkedList el método mapHouses().
@@ -36,11 +34,11 @@ LinkedList.prototype.mapHouses = function (value) {
     current.value = value
     current = current.next
   }
-  return true;
+  return true
+  //Termine el 7
 }
-//Termine el 7
 
 // ⚠️ NO MODIFICAR NADA POR DEBAJO DE ESTA LÍNEA ⚠️
 module.exports = {
   LinkedList
-};
+}

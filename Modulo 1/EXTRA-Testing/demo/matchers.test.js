@@ -106,8 +106,4 @@ xdescribe('Extra matchers', () => {
       // expect(error).toThrow(SyntaxError);
       expect(error).toThrow(new TypeError('An error'));
     });
-});
-
-
-
-
+})

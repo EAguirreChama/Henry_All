@@ -1,21 +1,21 @@
-import React from "react";
-import { configure, mount } from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import { MemoryRouter } from "react-router-dom";
-import * as ReactRedux from "react-redux";
-import configureStore from "redux-mock-store";
-import thunk from "redux-thunk";
-import isReact from "is-react";
+import React from "react"
+import { configure, mount } from "enzyme"
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17"
+import { MemoryRouter } from "react-router-dom"
+import * as ReactRedux from "react-redux"
+import configureStore from "redux-mock-store"
+import thunk from "redux-thunk"
+import isReact from "is-react"
 
-import CharacterDetail from "../src/components/CharacterDetail/CharacterDetail";
-import * as data from "../db.json";
-import * as actions from "../src/redux/actions";
-import axios from "axios";
-import nock from "nock";
-import nodeFetch from "node-fetch";
-axios.defaults.adapter = require("axios/lib/adapters/http");
+import CharacterDetail from "../src/components/CharacterDetail/CharacterDetail"
+import * as data from "../db.json"
+import * as actions from "../src/redux/actions"
+import axios from "axios"
+import nock from "nock"
+import nodeFetch from "node-fetch"
+axios.defaults.adapter = require("axios/lib/adapters/http")
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
 jest.mock('../src/redux/actions/index', () => ({
   getCharacterDetail: () => ({

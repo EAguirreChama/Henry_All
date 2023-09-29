@@ -1,5 +1,5 @@
-import * as actions from "../src/redux/actions";
-import * as data from "../db.json";
+import * as actions from "../src/redux/actions"
+import * as data from "../db.json"
 
 import HomeConnected, {
   Home,

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 // Importar las actions como Object Modules, sino los test no funcionarán!
 
@@ -12,8 +12,7 @@ const CharacterDetail = (props) => {
   return (
     <div>
     </div>
-  );
-};
+  )
+}
 
-
-export default CharacterDetail;
+export default CharacterDetail

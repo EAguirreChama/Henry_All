@@ -2,7 +2,6 @@ import * as data from "../db.json";
 
 import { configure, mount } from "enzyme";
 
-
 import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import App from "../src/App";
 import CreateCharacter from "../src/components/CreateCharacter/CreateCharacter";

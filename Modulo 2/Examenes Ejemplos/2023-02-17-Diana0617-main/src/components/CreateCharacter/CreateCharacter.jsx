@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 // Importar las actions como Object Modules, sino los test no funcionarán!
 
 // Fijense en los test que SI O SI tiene que ser un functional component, de otra forma NO VAN A PASAR LOS TEST
@@ -9,10 +9,8 @@ import React from "react";
 const CreateCharacter = () => {
   return (
     <div>
-
     </div>
-  );
-};
+  )
+}
 
-
-export default CreateCharacter;
+export default CreateCharacter

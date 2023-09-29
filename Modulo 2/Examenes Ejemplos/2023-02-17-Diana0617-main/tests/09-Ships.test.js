@@ -1,23 +1,23 @@
-import * as actions from "../src/redux/actions";
-import * as data from "../db.json";
-import ShipCard from "../src/components/ShipCard/ShipCard";
-import Ships from "../src/components/Ships/Ships";
-import { configure, mount, shallow } from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import * as ReactRedux from "react-redux";
-import { MemoryRouter } from "react-router-dom";
-import { Provider } from "react-redux";
-import React from "react";
-import axios from "axios";
-import configureStore from "redux-mock-store";
-import isReact from "is-react";
-import nock from "nock";
-import nodeFetch from "node-fetch";
-import thunk from "redux-thunk";
+import * as actions from "../src/redux/actions"
+import * as data from "../db.json"
+import ShipCard from "../src/components/ShipCard/ShipCard"
+import Ships from "../src/components/Ships/Ships"
+import { configure, mount, shallow } from "enzyme"
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17"
+import * as ReactRedux from "react-redux"
+import { MemoryRouter } from "react-router-dom"
+import { Provider } from "react-redux"
+import React from "react"
+import axios from "axios"
+import configureStore from "redux-mock-store"
+import isReact from "is-react"
+import nock from "nock"
+import nodeFetch from "node-fetch"
+import thunk from "redux-thunk"
 
-axios.defaults.adapter = require("axios/lib/adapters/http");
+axios.defaults.adapter = require("axios/lib/adapters/http")
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
 // Acá se mockea la action para que el test pueda funcionar correctamente, sin importar si hay un bug en ese archivo
 jest.mock('../src/redux/actions/index.js', () => ({
@@ -134,5 +134,4 @@ describe("<Home />", () => {
     expect(shipCard(ship[1]).find("img").prop("alt")).toEqual(ship[1].name)
     expect(shipCard(ship[2]).find("img").prop("alt")).toEqual(ship[2].name)
   });
-
 });

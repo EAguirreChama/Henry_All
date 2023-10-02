@@ -77,10 +77,8 @@ var [arr, len] = hola()
 //   }
 // }
 
-
 // bob.printFriends();
 // bob.printFriendsF();
-
 
 // let fibonacci = {
 //   [Symbol.iterator]() {
@@ -94,14 +92,12 @@ var [arr, len] = hola()
 //   }
 // }
 
-
 // for (var n of fibonacci) {
 //   // truncate the sequence at 1000
 //   if (n > 1000)
 //     break;
 //   console.log(n);
 // }
-
 
 function* idMaker(){
   var index = 0;
@@ -111,7 +107,6 @@ function* idMaker(){
 }
 
 var gen = idMaker();
-
 
 for(i of gen){
 	console.log(i)
@@ -154,12 +149,12 @@ array[2]()
 // m.get(s) == 34;
 
 // Weak Maps
-var ws = new WeakSet();
-var obj = {};
-var foo = {};
+var ws = new WeakSet()
+var obj = {}
+var foo = {}
 
-ws.add(this);
-ws.add(obj);
+ws.add(this)
+ws.add(obj)
 
 var obj = null;
 console.log(ws);

@@ -26,7 +26,6 @@ function ToDo (description) {
   this.complete = false
 }
 
-
 // Agregar un método denominado 'completeToDo' al prototipo de la clase ToDo
 // No requiere ningún argumento
 // Debe setear el atributo 'complete' del ToDo en true
@@ -35,7 +34,6 @@ function ToDo (description) {
 ToDo.prototype.completeToDo = function (){
   this.complete = true
 }
-
 
 // Agregar dos parámetros a la función 'buildToDo':
 //    1) Un objeto de la clase ToDo
@@ -53,7 +51,6 @@ ToDo.prototype.completeToDo = function (){
 //          - Si es false: no asignarle ninguna clase
 //    7) Agregar 'toDoText' como hijo de 'toDoShell'
 //    8) Devolver la variable toDoShell
-
 
 function buildToDo(todo, index) { // todo: {description: "" ; complete: false}, index: numerico
   // Tu código acá:
@@ -145,7 +142,6 @@ function addToDo() {
 let button = document.querySelector("#addButton")
 button.addEventListener("click", addToDo)
 
-
 // La función completeToDo se va a ejecutar cuando queramos completar un todo
 // [NOTA: Algunas cuestiones a tener en cuenta
 // Todo Event Listener recibe como parámetro el objeto 'event' conteniendo un montón de información que incluye
@@ -169,7 +165,6 @@ function completeToDo(event) {
 
 // Una vez que llegaste a este punto verificá que todos los tests pasen
 
-
 // **********************************************EXTRA CREDITOS:********************************************** //
 
 /*    Investigá sobre el tipo 'checkbox' del elemento input y realizar lo siguiente en la función 'buildToDo':
@@ -182,10 +177,8 @@ function completeToDo(event) {
 */
 // ********************************************** ----------- ********************************************** //
 
-
 // Acá debes insertar la llamada a 'displayToDos'
 displayToDos()
-
 
 // ---------------------------- NO CAMBIES NADA DE ACÁ PARA ABAJO ----------------------------- //
 if (typeof module !== 'undefined') {
@@ -197,5 +190,5 @@ if (typeof module !== 'undefined') {
     completeToDo: completeToDo,
     displayToDos: displayToDos,
     addToDo: addToDo
-  };
+  }
 }

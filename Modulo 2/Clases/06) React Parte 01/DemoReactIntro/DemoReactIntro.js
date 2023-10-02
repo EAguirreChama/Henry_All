@@ -7,14 +7,12 @@
 // Para trabajar con clases debo importar React de React
 // Se usa la palabra reservada extends React.Component para saber que es una clase de React
 
-
 // Para usar React se instala
 // npx create-react-app y el nombre de la carpeta que se va a crear
 // Su estructura
 // Carpeta public ==> un html
 // Carpeta src ==> dos archivos de css, app.js y index.js
 // index.js es un entry point
-
 
 // Virtual Dom
 

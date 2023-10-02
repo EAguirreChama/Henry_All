@@ -1,9 +1,7 @@
 // Ecmascript 
 // Se encarga de dar estandares para Js
 
-
 // Nuevas Features
-
 // Let & Const
 // Let si puedo pisarlo y a Const no puedo pisarlo (su valor)
 
@@ -38,8 +36,6 @@ let { apellido } = objeto // Aguirre
 // Default ===> para mandar un valor por defecto
 // Spread ===> hace una copia de los valores de los arrays/objetos
 // Rest ===> permite que despues de los ... pase todos los datos que quieramos
-
-
 
 // Babel 
 // Es una libreria que nos pasa el codigo que tenemos a un lenguaje más viejo para que nos entienda cualquier tipo de pagina

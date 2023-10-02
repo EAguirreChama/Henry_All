@@ -22,7 +22,6 @@ const whiteboard = new EventEmitter();
         document.querySelector('.selected').classList.remove('selected');
         this.classList.add('selected');
     });
-
   });
 
   var canvas = document.getElementById('paint');
@@ -90,8 +89,7 @@ const whiteboard = new EventEmitter();
     currentMousePosition.x = e.pageX - this.offsetLeft;
     currentMousePosition.y = e.pageY - this.offsetTop;
 
-    whiteboard.draw(lastMousePosition, currentMousePosition, color, true);
-
+    whiteboard.draw(lastMousePosition, currentMousePosition, color, true)
   });
 
   whiteboard.draw = function (start, end, strokeColor, shouldBroadcast) {
@@ -110,7 +108,6 @@ const whiteboard = new EventEmitter();
     if (shouldBroadcast) {
       whiteboard.emit('draw', start, end, strokeColor);
     }
-
   };
 
-  module.exports = whiteboard;
+  module.exports = whiteboard

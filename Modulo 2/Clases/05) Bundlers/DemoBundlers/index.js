@@ -1,4 +1,4 @@
-import {num1, num2, nombre} from "./Constantes";
+import {num1, num2, nombre} from "./Constantes"
 
 import {sumar, printName} from "./Funciones"
 

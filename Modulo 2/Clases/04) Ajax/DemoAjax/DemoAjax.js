@@ -28,6 +28,4 @@ const [loadUsers] = $("#loadUsers")
 const fetchUsers = () => {
     $.get("https://jsonplaceholder.typicode.com/users" , responseHandler)
 }
-
-
 loadUsers.addEventListener("click", fetchUsers)

@@ -24,4 +24,3 @@
 // React ya tiene incorporado webpack
 // En el packjson se crea abajo de start (build: "webpack")
 // Siempre que lo utilizo, si cambio algo en los archivos debo poner npm run build
-

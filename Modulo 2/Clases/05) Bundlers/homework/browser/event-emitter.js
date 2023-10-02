@@ -1,6 +1,6 @@
 // our EventEmitter constructor function
   function EventEmitter () {
-    this.subscribers = {};
+    this.subscribers = {}
   }
 
   // To be used like:
@@ -17,7 +17,6 @@
     // Push the given listener function into the array
     // located on the instance's subscribers object.
     this.subscribers[eventName].push(eventListener);
-
   };
 
   // To be used like:
@@ -36,7 +35,6 @@
     this.subscribers[eventName].forEach(function (listener) {
         listener.apply(null, remainingArgs);
     });
-
   };
 
   module.exports = EventEmitter

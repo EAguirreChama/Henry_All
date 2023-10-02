@@ -1,9 +1,9 @@
 // Constante para la URL
-const url = "http://localhost:5000/amigos";
+const url = "http://localhost:5000/amigos"
 // Se llama al Boton de Ver Amigos
-const [boton] = $("#boton");
+const [boton] = $("#boton")
 // Se llama al Boton para Buscar amigos
-const [search] = $("#search");
+const [search] = $("#search")
 // Se llama al Boton para Borrar amigos
 const [deleteA] = $("#delete")
 
@@ -56,7 +56,6 @@ const deleteFriend = () => {
         success: (respuesta) => listFriends(respuesta)
     })
 }
-
 
 // Para agregar un metodo, en el boton que corresponde. Ejecuta una funcion
 boton.addEventListener("click" , listaAmigos) // Evento para ver amigos

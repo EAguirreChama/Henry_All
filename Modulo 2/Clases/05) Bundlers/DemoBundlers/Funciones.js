@@ -11,11 +11,11 @@
 // Siempre que se hace destructuring se pone los nombre de la info que queremos traer del otro archivo
 // import {num1, num2, nombre} from "./Constantes"
 
-export const sumar = (a , b) => a + b;
+export const sumar = (a , b) => a + b
 
 export const printName = (name) => {
-    console.log(name);
-};
+    console.log(name)
+}
 
 // Primera forma
 // sumar(num1, num2)

@@ -7,12 +7,10 @@
 // document.querySelectorAll        ("Nombre de lo que sea")  ==> Retorna lo que se pida.
 // document.querySelector           ("Nombre")                ==> Retorna un elemento que se pida (#ParaId , .ParaClases , )
 
-
 // Metodos
 // .innerHtml   ==> Permite saber el texto de una etiqueta. Tambien nos permite modificar el texto, pero no para siempre.
 // .innerText   ==> Permite saber el texto de una etiqueta.
 // .appendChild ==> Permite agregar una accion a un elemento
-
 
 // Eventos
 // NombreDelElemento.addEventListener("click", function(){})

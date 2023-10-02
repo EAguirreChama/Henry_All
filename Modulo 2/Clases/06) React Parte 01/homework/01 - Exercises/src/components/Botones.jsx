@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 class Botones extends React.Component{
     constructor(props) {
@@ -15,4 +15,4 @@ class Botones extends React.Component{
     }
 }
 
-export default Botones;
+export default Botones

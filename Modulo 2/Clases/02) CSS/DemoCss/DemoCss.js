@@ -3,7 +3,6 @@
 // A tener en cuenta
 // 1rem son 16px
 
-
 // Estilos
 // background-color ==> para cambiar el fondo del boton
 // color ==> para cambiar el color de las letas
@@ -24,7 +23,6 @@
 
 // :root {} ==> para ponerle estilos a toda la pantalla en general
 
-
 // Bootstrap ==> nos permite agregar estilos sin tener que hacerlo de forma manual (se necesita agregar el link al index)
 
 // Css Media Queries (Todo dentro de una etiqueta styles)
@@ -33,7 +31,6 @@
 // margin ==> cuanto espacio queremos entre el contenido y la pantalla (en rem)
 
 // Grid System ==> agarra la pantalla y la divide simetricamente (siempre son 12 columnas)
-
 
 // Css Preprocessors
 // Less ==> nos traduce todo a css puro

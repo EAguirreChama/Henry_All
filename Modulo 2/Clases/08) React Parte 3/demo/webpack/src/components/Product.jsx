@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function Product(props) {
   return (
@@ -6,7 +6,7 @@ function Product(props) {
       <h3>{props.title}</h3>
       <p>$ {props.price}</p>
     </div>
-  );
+  )
 }
 
-export default Product;
+export default Product

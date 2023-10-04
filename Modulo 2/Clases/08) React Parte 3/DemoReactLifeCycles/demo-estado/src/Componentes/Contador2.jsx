@@ -1,5 +1,5 @@
 // Componente funcional
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
 const Contador2 = () => {
 
@@ -33,4 +33,5 @@ const Contador2 = () => {
         </div>
     )
 }
-export default Contador2;
+
+export default Contador2

@@ -4,7 +4,7 @@ import Bienvenido from './components/Bienvenido/Bienvenido.jsx'
 export default function App () {
   return (
     <div>
-      <Bienvenido />
+      <Bienvenido/>
     </div>
   )
 }

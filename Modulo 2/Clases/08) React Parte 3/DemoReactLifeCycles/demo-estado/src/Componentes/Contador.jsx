@@ -1,5 +1,5 @@
 // Componente de clases
-import React from "react";
+import React from "react"
 
 class Contador extends React.Component {
     constructor(props){
@@ -9,8 +9,8 @@ class Contador extends React.Component {
         this.state = {
             counter: 0,
             saludo: "Este es el contador"
-        };
-    };
+        }
+    }
 
     clickStateMas = () => {
         // Si queremos modificar el estado se utiliza setState
@@ -30,7 +30,7 @@ class Contador extends React.Component {
                 <button onClick={this.clickStateMenos}>Disminuir</button>
             </div>
         )
-    };
+    }
 };
 
-export default Contador;
+export default Contador

@@ -41,18 +41,18 @@ describe("03 | Ejercicios", () => {
 
     apiMock
       .get((uri) => {
-        id = Number(uri.split("/").pop());
-        return !!id;
+        id = Number(uri.split("/").pop())
+        return !!id
       })
       .reply(200, (uri, requestBody) => {
-        return data.cruises.find((cruise) => cruise.id === id) || {};
-      });
+        return data.cruises.find((cruise) => cruise.id === id) || {}
+      })
 
-    jest.spyOn(Router, "useNavigate").mockImplementation(() => navigate);
+    jest.spyOn(Router, "useNavigate").mockImplementation(() => navigate)
 
-    useEffect = jest.spyOn(React, "useEffect");
-    mockUseEffect();
-  });
+    useEffect = jest.spyOn(React, "useEffect")
+    mockUseEffect()
+  })
 
   it("Componente Card | Envuelve todo el código dentro del componente Link que importaste previamente desde react-router-dom", () => {
     const card = shallow(<Card />);

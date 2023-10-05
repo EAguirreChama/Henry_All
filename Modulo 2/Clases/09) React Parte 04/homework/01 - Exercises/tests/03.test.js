@@ -27,13 +27,13 @@ jest.mock("react-router-dom", () => ({
 }))
 
 describe("03 | Ejercicios", () => {
-  let useEffect;
-  const mockUseEffect = () => useEffect.mockImplementation(() => jest.fn());
-  const navigate = jest.fn();
+  let useEffect
+  const mockUseEffect = () => useEffect.mockImplementation(() => jest.fn())
+  const navigate = jest.fn()
   beforeEach(() => {
-    console.error.mockClear();
-    console.warn.mockClear();
-    let id;
+    console.error.mockClear()
+    console.warn.mockClear()
+    let id
 
     const apiMock = nock("http://localhost:3001").persist();
 

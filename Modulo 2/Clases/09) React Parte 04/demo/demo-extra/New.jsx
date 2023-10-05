@@ -1,8 +1,8 @@
-import React from 'react';
-import { useLocation } from "react-router-dom";
+import React from 'react'
+import { useLocation } from "react-router-dom"
 
 export default function New() {
-  let location = useLocation();
+  let location = useLocation()
 
   return (
     <div>
@@ -15,6 +15,5 @@ export default function New() {
       : <h2>New missing parameters</h2>
     }
     </div>
-  );
-};
-  
+  )
+}

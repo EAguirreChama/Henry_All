@@ -56,8 +56,8 @@ describe("03 | Ejercicios", () => {
 
   it("Componente Card | Envuelve todo el código dentro del componente Link que importaste previamente desde react-router-dom", () => {
     const card = shallow(<Card />);
-    expect(card.find("Link")).toHaveLength(1);
-  });
+    expect(card.find("Link")).toHaveLength(1)
+  })
 
   it("Componente Card | El componente Link debe tener el atributo 'to' igual a '/cruises/:id'", () => {
     const card = shallow(<Card id={1} />);

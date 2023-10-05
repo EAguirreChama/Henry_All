@@ -19,12 +19,12 @@ console.error = jest.fn()
 console.warn = jest.fn()
 
 // Configuramos fetch
-global.fetch = fetch;
+global.fetch = fetch
 
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
   useParams: jest.fn(),
-}));
+}))
 
 describe("03 | Ejercicios", () => {
   let useEffect;

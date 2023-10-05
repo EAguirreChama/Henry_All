@@ -1,7 +1,7 @@
-import React from "react";
-import logoHenry from "../../assets/logo-henry.png";
-import styleNav from "./NavBar.module.css";
-import { NavLink } from "react-router-dom";
+import React from "react"
+import logoHenry from "../../assets/logo-henry.png"
+import styleNav from "./NavBar.module.css"
+import { NavLink } from "react-router-dom"
 
 export default function NavBar() {
   return (
@@ -29,5 +29,5 @@ export default function NavBar() {
         </div>
       </ul>
     </div>
-  );
+  )
 }

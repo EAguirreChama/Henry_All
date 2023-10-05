@@ -50,15 +50,15 @@ describe("02 | Ejercicios", () => {
 
   it("En App.js debería renderizarse el componente Routes", () => {
     const app = shallow(<App />);
-    expect(app.find("Routes")).toHaveLength(1);
+    expect(app.find("Routes")).toHaveLength(1)
   })
 
   it("El componente Home debería ser renderizado en la ruta /", () => {
-    const app = mount(componentToUse(routes[0]));
-    expect(app.find(Home)).toHaveLength(1);
-    expect(app.find(CardDetail)).toHaveLength(0);
-    expect(app.find(Shipping)).toHaveLength(0);
-    expect(app.find(Discounts)).toHaveLength(0);
+    const app = mount(componentToUse(routes[0]))
+    expect(app.find(Home)).toHaveLength(1)
+    expect(app.find(CardDetail)).toHaveLength(0)
+    expect(app.find(Shipping)).toHaveLength(0)
+    expect(app.find(Discounts)).toHaveLength(0)
   })
 
   it("El componente Shipping debería ser renderizado en la ruta /shipping", () => {

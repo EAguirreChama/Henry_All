@@ -1,11 +1,10 @@
-import React from "react";
-import styles from "./CardDetail.module.css";
-import { useParams , useNavigate } from "react-router-dom";
-
+import React from "react"
+import styles from "./CardDetail.module.css"
+import { useParams , useNavigate } from "react-router-dom"
 
 export default function CardDetail() {
 
-  const {id} = useParams;
+  const {id} = useParams
 
   const navigate = useNavigate()
 
@@ -67,5 +66,5 @@ export default function CardDetail() {
         </div>
       </div>
     </div>
-  );
+  )
 }

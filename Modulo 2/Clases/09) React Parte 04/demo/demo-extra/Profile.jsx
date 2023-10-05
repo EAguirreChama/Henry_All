@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { useParams, Prompt } from "react-router-dom";
+import React, { useState } from 'react'
+import { useParams, Prompt } from "react-router-dom"
 
 export default function Profile() {
   let { id } = useParams();
-  let [isBlocked, setIsBlocked] = useState(false);
+  let [isBlocked, setIsBlocked] = useState(false)
 
   function onProfileSubmit(e) {
-    e.preventDefault();
-    setIsBlocked(false);
+    e.preventDefault()
+    setIsBlocked(false)
   }
 
   function onInputChange(e) {
-    setIsBlocked(e.target.value.length > 0);
+    setIsBlocked(e.target.value.length > 0)
   }
 
   return (
@@ -35,6 +35,5 @@ export default function Profile() {
       <input type="submit" value="SAVE" />
       {isBlocked && <p style={{color: 'red'}}>Changes will be lost if you leave</p>}
     </form>
-  );
-};
-  
+  )
+}

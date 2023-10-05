@@ -119,9 +119,9 @@ describe("03 | Ejercicios", () => {
       >
         <NavBar />
       </MemoryRouter>
-    );
-    expect(navBar.find("NavLink").at(2).prop("to")).toBe("/discounts");
-  });
+    )
+    expect(navBar.find("NavLink").at(2).prop("to")).toBe("/discounts")
+  })
 
-  afterEach(() => jest.restoreAllMocks());
-});
+  afterEach(() => jest.restoreAllMocks())
+})

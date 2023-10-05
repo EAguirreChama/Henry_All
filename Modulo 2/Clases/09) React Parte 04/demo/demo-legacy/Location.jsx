@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default function Location({ location }) {
   return (
@@ -9,6 +9,5 @@ export default function Location({ location }) {
       : <h2>Query: {location.search}</h2>
     }
     </div>
-  );
-};
-  
+  )
+} 

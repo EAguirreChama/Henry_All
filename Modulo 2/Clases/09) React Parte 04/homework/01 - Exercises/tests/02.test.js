@@ -30,28 +30,28 @@ describe("02 | Ejercicios", () => {
   let routes;
 
   beforeEach(() => {
-    console.error.mockClear();
-    console.warn.mockClear();
+    console.error.mockClear()
+    console.warn.mockClear()
     // Se Mockea las request a las api
-    const apiMock = nock("http://localhost:3001").persist();
+    const apiMock = nock("http://localhost:3001").persist()
 
-    apiMock.get("/cruises").reply(200, data.cruises);
-  });
+    apiMock.get("/cruises").reply(200, data.cruises)
+  })
 
-  routes = ["/", "/cruises/2", "/shipping", "/discounts"];
+  routes = ["/", "/cruises/2", "/shipping", "/discounts"]
 
   const componentToUse = (route) => {
     return (
       <MemoryRouter initialEntries={[route]}>
         <App />
       </MemoryRouter>
-    );
-  };
+    )
+  }
 
   it("En App.js debería renderizarse el componente Routes", () => {
     const app = shallow(<App />);
     expect(app.find("Routes")).toHaveLength(1);
-  });
+  })
 
   it("El componente Home debería ser renderizado en la ruta /", () => {
     const app = mount(componentToUse(routes[0]));
@@ -59,7 +59,7 @@ describe("02 | Ejercicios", () => {
     expect(app.find(CardDetail)).toHaveLength(0);
     expect(app.find(Shipping)).toHaveLength(0);
     expect(app.find(Discounts)).toHaveLength(0);
-  });
+  })
 
   it("El componente Shipping debería ser renderizado en la ruta /shipping", () => {
     const app = mount(componentToUse(routes[2]));
@@ -67,7 +67,7 @@ describe("02 | Ejercicios", () => {
     expect(app.find(Home)).toHaveLength(0);
     expect(app.find(Shipping)).toHaveLength(1);
     expect(app.find(Discounts)).toHaveLength(0);
-  });
+  })
 
   it("El componente CardDetail debería ser renderizado en la ruta /cruises/:id", () => {
     const app = mount(componentToUse(routes[1]));
@@ -75,7 +75,7 @@ describe("02 | Ejercicios", () => {
     expect(app.find(Home)).toHaveLength(0);
     expect(app.find(Shipping)).toHaveLength(0);
     expect(app.find(Discounts)).toHaveLength(0);
-  });
+  })
 
   it("El componente Discounts debería ser renderizado en la ruta /discounts", () => {
     const app = mount(componentToUse(routes[3]));
@@ -83,7 +83,7 @@ describe("02 | Ejercicios", () => {
     expect(app.find(CardDetail)).toHaveLength(0);
     expect(app.find(Home)).toHaveLength(0);
     expect(app.find(Shipping)).toHaveLength(0);
-  });
+  })
 
   it("El componente Routes debe renderizar un Route por cada ruta", () => {
     const app = shallow(<App />);
@@ -92,8 +92,8 @@ describe("02 | Ejercicios", () => {
     routesChildren.forEach((c) => {
       expect(c.props().element).toBeTruthy();
       expect(c.props().path).toBeTruthy();
-    });
-  });
+    })
+  })
 
   it("El componente NavBar debería ser renderizado en todas las rutas", () => {
     const app = mount(componentToUse(routes[0]));
@@ -104,5 +104,5 @@ describe("02 | Ejercicios", () => {
     expect(app3.find(NavBar)).toHaveLength(1);
     const app4 = mount(componentToUse(routes[3]));
     expect(app4.find(NavBar)).toHaveLength(1);
-  });
-});
+  })
+})

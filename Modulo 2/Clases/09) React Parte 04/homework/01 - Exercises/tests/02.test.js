@@ -1,11 +1,11 @@
-import React from "react";
-import "@testing-library/jest-dom/extend-expect";
-import { MemoryRouter } from "react-router-dom";
-import { configure, mount, shallow } from "enzyme";
-import fetch from "node-fetch";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import nock from "nock";
-import data from "../db.json";
+import React from "react"
+import "@testing-library/jest-dom/extend-expect"
+import { MemoryRouter } from "react-router-dom"
+import { configure, mount, shallow } from "enzyme"
+import fetch from "node-fetch"
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17"
+import nock from "nock"
+import data from "../db.json"
 
 // Importamos variables/componentes
 import App from "../src/App";

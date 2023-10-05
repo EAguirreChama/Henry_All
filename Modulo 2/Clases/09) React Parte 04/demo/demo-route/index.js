@@ -1,6 +1,6 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { Route, Switch, Link, HashRouter as Router, useRouteMatch } from 'react-router-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import { Route, Switch, Link, HashRouter as Router, useRouteMatch } from 'react-router-dom'
 
 function NavBar() {
   return (
@@ -26,17 +26,16 @@ function NavBar() {
       <br></br>
       <Link to="/Sensitive">Sensitive Mayus</Link>
     </div>
-  );
-};
+  )
+}
 
 function Home() {
   return (
     <div>
       <h2>Home, Soy Henry!!</h2>
     </div>
-  );
-};
-
+  )
+}
 
 const Root = (
   <Router>
@@ -83,7 +82,6 @@ const Root = (
       </Route>
     </Switch>
   </Router>
-);
+)
 
-render(Root, document.querySelector('#app'));
-
+render(Root, document.querySelector('#app'))

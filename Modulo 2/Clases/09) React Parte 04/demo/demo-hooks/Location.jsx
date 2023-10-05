@@ -1,8 +1,8 @@
-import React from 'react';
-import { useLocation } from "react-router-dom";
+import React from 'react'
+import { useLocation } from "react-router-dom"
 
 export default function Location() {
-  let location = useLocation();
+  let location = useLocation()
 
   return (
     <div>
@@ -12,6 +12,5 @@ export default function Location() {
       : <h2>Query: {location.search}</h2>
     }
     </div>
-  );
-};
-  
+  )
+}

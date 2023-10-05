@@ -35,9 +35,9 @@ describe("03 | Ejercicios", () => {
     console.warn.mockClear()
     let id
 
-    const apiMock = nock("http://localhost:3001").persist();
+    const apiMock = nock("http://localhost:3001").persist()
 
-    apiMock.get("/cruises").reply(200, data.cruises);
+    apiMock.get("/cruises").reply(200, data.cruises)
 
     apiMock
       .get((uri) => {

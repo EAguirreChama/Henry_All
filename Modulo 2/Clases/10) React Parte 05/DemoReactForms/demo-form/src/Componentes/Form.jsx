@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"
 
 const Form = () => {
     // Aosciacion del estado con los input
@@ -50,7 +50,6 @@ const Form = () => {
         event.preventDefault()
     }
 
-
     return (
         <form onSubmit={handlerOnSubmit}>
             <h1>Formulario</h1>
@@ -74,4 +73,4 @@ const Form = () => {
     )
 }
 
-export default Form;
+export default Form

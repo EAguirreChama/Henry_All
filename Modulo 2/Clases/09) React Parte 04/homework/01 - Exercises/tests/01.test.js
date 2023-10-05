@@ -1,9 +1,9 @@
 // Configuramos test
-import React from "react";
-import "@testing-library/jest-dom/extend-expect";
-import { BrowserRouter } from "react-router-dom";
-import App from "../src/App";
-import ReactDOM from "react-dom";
+import React from "react"
+import "@testing-library/jest-dom/extend-expect"
+import { BrowserRouter } from "react-router-dom"
+import App from "../src/App"
+import ReactDOM from "react-dom"
 // Importamos variables/componentes
 
 jest.mock("react-dom", () => ({ render: jest.fn() }));
@@ -19,6 +19,6 @@ describe("01 | Ejercicios", () => {
         <App />
       </BrowserRouter>,
       div
-    );
-  });
-});
+    )
+  })
+})

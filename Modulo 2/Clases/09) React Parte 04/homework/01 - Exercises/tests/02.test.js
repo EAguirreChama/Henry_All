@@ -62,11 +62,11 @@ describe("02 | Ejercicios", () => {
   })
 
   it("El componente Shipping debería ser renderizado en la ruta /shipping", () => {
-    const app = mount(componentToUse(routes[2]));
-    expect(app.find(CardDetail)).toHaveLength(0);
-    expect(app.find(Home)).toHaveLength(0);
-    expect(app.find(Shipping)).toHaveLength(1);
-    expect(app.find(Discounts)).toHaveLength(0);
+    const app = mount(componentToUse(routes[2]))
+    expect(app.find(CardDetail)).toHaveLength(0)
+    expect(app.find(Home)).toHaveLength(0)
+    expect(app.find(Shipping)).toHaveLength(1)
+    expect(app.find(Discounts)).toHaveLength(0)
   })
 
   it("El componente CardDetail debería ser renderizado en la ruta /cruises/:id", () => {

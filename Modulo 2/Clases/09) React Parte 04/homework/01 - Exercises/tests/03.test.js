@@ -60,15 +60,15 @@ describe("03 | Ejercicios", () => {
   })
 
   it("Componente Card | El componente Link debe tener el atributo 'to' igual a '/cruises/:id'", () => {
-    const card = shallow(<Card id={1} />);
-    expect(card.find("Link").prop("to")).toBe("/cruises/1");
+    const card = shallow(<Card id={1} />)
+    expect(card.find("Link").prop("to")).toBe("/cruises/1")
 
-    const card2 = shallow(<Card id={2} />);
-    expect(card2.find("Link").prop("to")).toBe("/cruises/2");
+    const card2 = shallow(<Card id={2} />)
+    expect(card2.find("Link").prop("to")).toBe("/cruises/2")
 
-    const card3 = shallow(<Card id={3} />);
-    expect(card3.find("Link").prop("to")).toBe("/cruises/3");
-  });
+    const card3 = shallow(<Card id={3} />)
+    expect(card3.find("Link").prop("to")).toBe("/cruises/3")
+  })
 
   it("Componente CardDetail | Debería llamar a la función useParams y guardar el id", async () => {
     jest.spyOn(Router, "useParams").mockReturnValue({ id: "1" });

@@ -1,35 +1,35 @@
-import React, { useState } from 'react';
-import { useHistory } from "react-router-dom";
+import React, { useState } from 'react'
+import { useHistory } from "react-router-dom"
 
 export default function History() {
-  let history = useHistory();
+  let history = useHistory()
 
-  const [number, setNumber] = useState(0);
-  const [text, setText] = useState('');
+  const [number, setNumber] = useState(0)
+  const [text, setText] = useState('')
 
   function goBack() {
-    history.goBack();
+    history.goBack()
   }
 
   function goForward() {
-    history.goForward();
+    history.goForward()
   }
 
   function go() {
     if(!isNaN(number)) {
-      history.go(number);
+      history.go(number)
     }
   }
 
   function push() {
     if(text) {
-      history.push(`/${text}`);
+      history.push(`/${text}`)
     }
   }
 
   function replace() {
     if(text) {
-      history.replace(`/${text}`);
+      history.replace(`/${text}`)
     }
   }
 
@@ -47,6 +47,5 @@ export default function History() {
       <button onClick={push}>Push</button>
       <button onClick={replace}>Replace</button>
     </div>
-  );
-};
-  
+  )
+} 

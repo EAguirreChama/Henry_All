@@ -8,12 +8,12 @@ import nock from "nock"
 import data from "../db.json"
 
 // Importamos variables/componentes
-import App from "../src/App";
-import Home from "../src/components/Home/Home";
-import CardDetail from "../src/components/CardDetail/CardDetail";
-import Shipping from "../src/components/Shipping/Shipping";
-import NavBar from "../src/components/NavBar/NavBar";
-import Discounts from "../src/components/Discounts/Discounts";
+import App from "../src/App"
+import Home from "../src/components/Home/Home"
+import CardDetail from "../src/components/CardDetail/CardDetail"
+import Shipping from "../src/components/Shipping/Shipping"
+import NavBar from "../src/components/NavBar/NavBar"
+import Discounts from "../src/components/Discounts/Discounts"
 
 jest.mock("../src/components/Home/Home", () => () => <></>);
 jest.mock("../src/components/CardDetail/CardDetail", () => () => <></>);

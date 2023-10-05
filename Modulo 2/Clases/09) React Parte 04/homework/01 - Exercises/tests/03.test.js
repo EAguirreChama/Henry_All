@@ -97,9 +97,9 @@ describe("03 | Ejercicios", () => {
       >
         <NavBar />
       </MemoryRouter>
-    );
-    expect(navBar.find("NavLink").at(0).prop("to")).toBe("/");
-  });
+    )
+    expect(navBar.find("NavLink").at(0).prop("to")).toBe("/")
+  })
 
   it("Componente NavBar | Debería renderizar un </NavLink> para redirigir a '/shipping'", () => {
     const navBar = mount(

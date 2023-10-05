@@ -1,11 +1,11 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { Route, Switch, Redirect, HashRouter as Router } from 'react-router-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import { Route, Switch, Redirect, HashRouter as Router } from 'react-router-dom'
 
-import NavBar from './NavBar.jsx';
-import Home from './Home.jsx';
+import NavBar from './NavBar.jsx'
+import Home from './Home.jsx'
 import New from './New.jsx'
-import Profile from './Profile.jsx';
+import Profile from './Profile.jsx'
 
 const Root = (
   <Router>
@@ -41,7 +41,6 @@ const Root = (
       </Route>
     </Switch>
   </Router>
-);
+)
 
-render(Root, document.querySelector('#app'));
-
+render(Root, document.querySelector('#app'))

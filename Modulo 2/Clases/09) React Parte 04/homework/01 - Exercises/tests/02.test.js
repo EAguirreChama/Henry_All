@@ -87,11 +87,11 @@ describe("02 | Ejercicios", () => {
 
   it("El componente Routes debe renderizar un Route por cada ruta", () => {
     const app = shallow(<App />);
-    const routesChildren = app.find("Routes").children();
-    expect(routesChildren).toHaveLength(4);
+    const routesChildren = app.find("Routes").children()
+    expect(routesChildren).toHaveLength(4)
     routesChildren.forEach((c) => {
-      expect(c.props().element).toBeTruthy();
-      expect(c.props().path).toBeTruthy();
+      expect(c.props().element).toBeTruthy()
+      expect(c.props().path).toBeTruthy()
     })
   })
 

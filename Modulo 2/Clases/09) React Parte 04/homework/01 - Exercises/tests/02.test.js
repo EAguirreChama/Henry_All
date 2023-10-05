@@ -96,13 +96,13 @@ describe("02 | Ejercicios", () => {
   })
 
   it("El componente NavBar debería ser renderizado en todas las rutas", () => {
-    const app = mount(componentToUse(routes[0]));
-    expect(app.find(NavBar)).toHaveLength(1);
-    const app2 = mount(componentToUse(routes[1]));
-    expect(app2.find(NavBar)).toHaveLength(1);
-    const app3 = mount(componentToUse(routes[2]));
-    expect(app3.find(NavBar)).toHaveLength(1);
-    const app4 = mount(componentToUse(routes[3]));
-    expect(app4.find(NavBar)).toHaveLength(1);
+    const app = mount(componentToUse(routes[0]))
+    expect(app.find(NavBar)).toHaveLength(1)
+    const app2 = mount(componentToUse(routes[1]))
+    expect(app2.find(NavBar)).toHaveLength(1)
+    const app3 = mount(componentToUse(routes[2]))
+    expect(app3.find(NavBar)).toHaveLength(1)
+    const app4 = mount(componentToUse(routes[3]))
+    expect(app4.find(NavBar)).toHaveLength(1)
   })
 })

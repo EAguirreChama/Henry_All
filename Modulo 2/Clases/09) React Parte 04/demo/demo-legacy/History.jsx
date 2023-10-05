@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 export default function History({ history }) {
-  const [number, setNumber] = useState(0);
-  const [text, setText] = useState('');
+  const [number, setNumber] = useState(0)
+  const [text, setText] = useState('')
 
   function goBack() {
     history.goBack();
@@ -44,6 +44,5 @@ export default function History({ history }) {
       <button onClick={push}>Push</button>
       <button onClick={replace}>Replace</button>
     </div>
-  );
-};
-  
+  )
+} 

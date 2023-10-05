@@ -85,10 +85,10 @@ describe("03 | Ejercicios", () => {
       <MemoryRouter initialEntries={["/cruises/1"]}>
         <CardDetail />
       </MemoryRouter>
-    );
-    detail.find("button").simulate("click");
-    expect(navigate).toHaveBeenCalledWith("/");
-  });
+    )
+    detail.find("button").simulate("click")
+    expect(navigate).toHaveBeenCalledWith("/")
+  })
 
   it("Componente NavBar | Debería renderizar un </NavLink> para redirigir a '/'", () => {
     const navBar = mount(

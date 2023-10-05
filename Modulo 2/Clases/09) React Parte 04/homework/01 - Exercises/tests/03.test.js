@@ -71,14 +71,14 @@ describe("03 | Ejercicios", () => {
   })
 
   it("Componente CardDetail | Debería llamar a la función useParams y guardar el id", async () => {
-    jest.spyOn(Router, "useParams").mockReturnValue({ id: "1" });
+    jest.spyOn(Router, "useParams").mockReturnValue({ id: "1" })
     mount(
       <MemoryRouter initialEntries={["/cruises/1"]}>
         <CardDetail />
       </MemoryRouter>
-    );
-    expect(Router.useParams).toHaveBeenCalled();
-  });
+    )
+    expect(Router.useParams).toHaveBeenCalled()
+  })
 
   it("Componente CardDetail | Debería llamar a la función useNavigate al hacer click y redirigir a '/'", () => {
     const detail = mount(

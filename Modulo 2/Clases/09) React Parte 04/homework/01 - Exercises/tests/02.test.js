@@ -20,11 +20,11 @@ jest.mock("../src/components/CardDetail/CardDetail", () => () => <></>);
 jest.mock("../src/components/Shipping/Shipping", () => () => <></>);
 jest.mock("../src/components/NavBar/NavBar", () => () => <></>);
 
-configure({ adapter: new Adapter() });
-console.error = jest.fn();
-console.warn = jest.fn();
+configure({ adapter: new Adapter() })
+console.error = jest.fn()
+console.warn = jest.fn()
 
-global.fetch = fetch;
+global.fetch = fetch
 
 describe("02 | Ejercicios", () => {
   let routes;

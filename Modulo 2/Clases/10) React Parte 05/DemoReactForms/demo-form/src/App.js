@@ -1,12 +1,12 @@
-import './App.css';
-import Form from './Componentes/Form';
+import './App.css'
+import Form from './Componentes/Form'
 
 function App() {
   return (
     <div >
       <Form/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

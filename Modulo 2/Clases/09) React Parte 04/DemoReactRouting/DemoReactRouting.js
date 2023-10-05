@@ -1,7 +1,6 @@
 // React Router Dom
 // Podremos poner toda la info en una sola pagina
 
-
 // Routing 
 // Es cuando dirijimos al usuario a otra URL
 // Tenemos que instalar la version 6 de react-router-dom@6.3.0 (siempre indicar la version que quiero instalar)

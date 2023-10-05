@@ -1,12 +1,12 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { Route, Switch, Link, HashRouter as Router, useRouteMatch } from 'react-router-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import { Route, Switch, Link, HashRouter as Router, useRouteMatch } from 'react-router-dom'
 
-import Home from './Home.jsx';
-import Params from './Params.jsx';
-import Other from './Other.jsx';
-import Location from './Location.jsx';
-import History from './History.jsx';
+import Home from './Home.jsx'
+import Params from './Params.jsx'
+import Other from './Other.jsx'
+import Location from './Location.jsx'
+import History from './History.jsx'
 
 const customLocation = {
   pathname: '/location',
@@ -35,8 +35,8 @@ function NavBar() {
       <br></br>
       <Link to="/history">History</Link>
     </div>
-  );
-};
+  )
+}
 
 const Root = (
   <Router>
@@ -77,7 +77,6 @@ const Root = (
       </Route>
     </Switch>
   </Router>
-);
+)
 
-render(Root, document.querySelector('#app'));
-
+render(Root, document.querySelector('#app'))

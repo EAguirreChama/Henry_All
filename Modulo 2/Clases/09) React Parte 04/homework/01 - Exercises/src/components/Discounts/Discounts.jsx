@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export default function Promotions() {
   return (
@@ -26,5 +26,5 @@ export default function Promotions() {
         alt="prom3"
       />
     </div>
-  );
+  )
 }

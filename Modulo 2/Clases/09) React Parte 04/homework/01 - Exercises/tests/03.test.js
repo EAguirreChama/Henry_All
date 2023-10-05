@@ -108,9 +108,9 @@ describe("03 | Ejercicios", () => {
       >
         <NavBar />
       </MemoryRouter>
-    );
-    expect(navBar.find("NavLink").at(1).prop("to")).toBe("/shipping");
-  });
+    )
+    expect(navBar.find("NavLink").at(1).prop("to")).toBe("/shipping")
+  })
 
   it("Componente NavBar | Debería renderizar un </NavLink> para redirigir a '/discounts'", () => {
     const navBar = mount(

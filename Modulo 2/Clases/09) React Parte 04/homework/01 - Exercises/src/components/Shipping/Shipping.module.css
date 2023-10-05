@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
 }
-
 .cruises ul {
   justify-content: center;
   width: 50em;
@@ -14,7 +13,6 @@
   list-style: none;
   width: 10em;
 }
-
 .cruises li img {
   margin: 2em;
   border: solid #454545;

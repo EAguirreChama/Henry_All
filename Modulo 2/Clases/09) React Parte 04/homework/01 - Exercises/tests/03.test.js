@@ -1,22 +1,22 @@
-import React from "react";
-import "@testing-library/jest-dom/extend-expect";
-import { MemoryRouter } from "react-router-dom";
-import { configure, mount, shallow } from "enzyme";
-import fetch from "node-fetch";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import nock from "nock";
-import data from "../db.json";
-import Router from "react-router-dom";
+import React from "react"
+import "@testing-library/jest-dom/extend-expect"
+import { MemoryRouter } from "react-router-dom"
+import { configure, mount, shallow } from "enzyme"
+import fetch from "node-fetch"
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17"
+import nock from "nock"
+import data from "../db.json"
+import Router from "react-router-dom"
 
 // Importamos variables/componentes
-import Card from "../src/components/Card/Card";
-import CardDetail from "../src/components/CardDetail/CardDetail";
-import NavBar from "../src/components/NavBar/NavBar";
+import Card from "../src/components/Card/Card"
+import CardDetail from "../src/components/CardDetail/CardDetail"
+import NavBar from "../src/components/NavBar/NavBar"
 
 // Configuramos Enzyme y limpiamos sus mensajes de error
-configure({ adapter: new Adapter() });
-console.error = jest.fn();
-console.warn = jest.fn();
+configure({ adapter: new Adapter() })
+console.error = jest.fn()
+console.warn = jest.fn()
 
 // Configuramos fetch
 global.fetch = fetch;

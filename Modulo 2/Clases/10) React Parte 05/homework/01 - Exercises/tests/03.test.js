@@ -50,8 +50,8 @@ describe("03 | Ejercicios", () => {
         })
       ).toEqual({
         message: "Se requiere un mensaje",
-      });
-    });
+      })
+    })
 
     it("Si todos los campos son correctos, no debe devolver ningún error", () => {
       expect(
@@ -61,8 +61,8 @@ describe("03 | Ejercicios", () => {
           message: "Mensaje Henry",
         })
       ).toEqual({});
-    });
-  });
+    })
+  })
 
   describe("***Estilos de errores***", () => {
     it("Si el nombre tiene errores, el input debe tener una clase 'warning'. Cuando estos errores desaparezcan, el input NO debe tener la clase 'warning'", () => {

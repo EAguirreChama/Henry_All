@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 export default function Form() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
   function validateUser(value) {
     if(!/\S+@\S+\.\S+/.test(value)) {
-      setError('el usuario tiene que ser un email');
+      setError('el usuario tiene que ser un email')
     } else {
-      setError('');
+      setError('')
     }
-    setUsername(value);
+    setUsername(value)
   }
+  
   return (
       <form>
         <input className={error && 'danger'}
@@ -20,5 +21,5 @@ export default function Form() {
         <input name="password" value={password} placeholder="password" type="password" onChange={(e) => setPassword(e.target.value)}/>
         <input type="submit" />
       </form>
-    );
+    )
 }

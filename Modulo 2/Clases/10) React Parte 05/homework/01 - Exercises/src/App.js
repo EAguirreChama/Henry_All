@@ -1,5 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
+
+// Componentes
 import Home from './components/Home/Home.jsx'
 import NavBar from './components/NavBar/NavBar.jsx'
 import Contact from './components/Contact/Contact'

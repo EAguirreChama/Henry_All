@@ -1,5 +1,5 @@
-import React from "react";
-import styleCard from "./Card.module.css";
+import React from "react"
+import styleCard from "./Card.module.css"
 
 export default function Card({ name, image }) {
   return (
@@ -7,5 +7,5 @@ export default function Card({ name, image }) {
       <h4>{name}</h4>
       <img src={image} alt="" />
     </div>
-  );
+  )
 }

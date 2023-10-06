@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 function Ejemplo({lang}) {
   if (lang === 'hun') {
@@ -10,6 +10,7 @@ function Ejemplo({lang}) {
       </form>
       )
   }
+  
   return (
       <form>
         <input key="firstName" type="text" placeholder="First Name" name="firstName"/> 
@@ -20,7 +21,7 @@ function Ejemplo({lang}) {
 }
 
 export default function Lang() {
-  const [lang, setLang] = useState('hun');
+  const [lang, setLang] = useState('hun')
 
   return <div>
     <Ejemplo lang={lang} />

@@ -7,7 +7,7 @@ import Adapter from "@wojtekmaj/enzyme-adapter-react-17"
 // Importamos variables/componentes
 import Contact from "../src/components/Contact/Contact"
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
 describe("01 | Ejercicios", () => {
   let contact;

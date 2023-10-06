@@ -48,8 +48,8 @@ describe("01 | Ejercicios", () => {
   })
 
   it("Debería renderizar un label para el mensaje con el texto 'Mensaje:'", () => {
-    expect(contact.find("label").at(2).text()).toEqual("Mensaje:");
-  });
+    expect(contact.find("label").at(2).text()).toEqual("Mensaje:")
+  })
 
   it("Debería renderizar un textarea para el mensaje con los atributos name, placeholder y type", () => {
     const inputMessage = contact.find("textarea").at(0);
@@ -59,15 +59,15 @@ describe("01 | Ejercicios", () => {
       name: "message",
       placeholder: "Escribe tu mensaje...",
       type: "text",
-    });
-  });
+    })
+  })
 
   it("Debería renderizar un botón con el atributo type que sea submit y con el texto 'Enviar'", () => {
     const button = contact.find("button");
     expect(button.props()).toEqual({
       ...button.props(),
       type: "submit",
-    });
-    expect(button.text()).toEqual("Enviar");
-  });
-});
+    })
+    expect(button.text()).toEqual("Enviar")
+  })
+})

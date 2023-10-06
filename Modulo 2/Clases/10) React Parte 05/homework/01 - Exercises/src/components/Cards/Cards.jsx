@@ -1,6 +1,6 @@
-import React from "react";
-import Card from "../Card/Card";
-import styleCards from "./Cards.module.css";
+import React from "react"
+import Card from "../Card/Card"
+import styleCards from "./Cards.module.css"
 
 export default function Cards({ music }) {
   if (music) {
@@ -12,6 +12,6 @@ export default function Cards({ music }) {
       </div>
     );
   } else {
-    <div>No hay música</div>;
+    <div>No hay música</div>
   }
 }

@@ -26,8 +26,8 @@ describe("03 | Ejercicios", () => {
         })
       ).toEqual({
         name: "Se requiere un nombre",
-      });
-    });
+      })
+    })
 
     it("El email debe coincidir con un formato válido", () => {
       expect(
@@ -38,8 +38,8 @@ describe("03 | Ejercicios", () => {
         })
       ).toEqual({
         email: "Debe ser un correo electrónico",
-      });
-    });
+      })
+    })
 
     it("El message debe ser obligatorio y no estar vacío", () => {
       expect(

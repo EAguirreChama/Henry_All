@@ -35,7 +35,7 @@ describe("01 | Ejercicios", () => {
 
   it("Debería renderizar un label para el correo electrónico con el texto 'Correo Electrónico:'", () => {
     expect(contact.find("label").at(1).text()).toEqual("Correo Electrónico:");
-  });
+  })
 
   it("Debería renderizar un input para el correo electrónico con los atributos name, placeholder y type", () => {
     const inputEmail = contact.find("input").at(1);
@@ -44,8 +44,8 @@ describe("01 | Ejercicios", () => {
       name: "email",
       placeholder: "Escribe tu email...",
       type: "text",
-    });
-  });
+    })
+  })
 
   it("Debería renderizar un label para el mensaje con el texto 'Mensaje:'", () => {
     expect(contact.find("label").at(2).text()).toEqual("Mensaje:");

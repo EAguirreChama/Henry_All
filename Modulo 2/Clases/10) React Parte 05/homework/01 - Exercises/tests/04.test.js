@@ -7,7 +7,7 @@ import Adapter from "@wojtekmaj/enzyme-adapter-react-17"
 // Importamos variables/componentes/funciones
 import Contact from "../src/components/Contact/Contact"
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
 describe("04 | Ejercicios", () => {
   let contact, handleSubmit, alert, onSubmit;
@@ -15,7 +15,7 @@ describe("04 | Ejercicios", () => {
   beforeEach(() => {
     contact = shallow(<Contact />);
     handleSubmit = jest.fn();
-  });
+  })
 
   beforeAll(() => {
     alert = window.alert;

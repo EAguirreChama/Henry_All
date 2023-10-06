@@ -25,7 +25,7 @@ function DinamicInputs() {
     const familiares = [...familiar];
     familiares[e.target.id][e.target.dataset.name] = e.target.value;
     setFamiliar(familiares);
-  };
+  }
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -63,7 +63,7 @@ function DinamicInputs() {
       }
       <input type="submit" value="Submit" />        
     </form>   
-  );
-};
+  )
+}
 
 export default DinamicInputs

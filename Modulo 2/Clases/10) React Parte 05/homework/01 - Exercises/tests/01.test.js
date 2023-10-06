@@ -13,11 +13,11 @@ describe("01 | Ejercicios", () => {
   let contact;
   beforeEach(() => {
     contact = shallow(<Contact />);
-  });
+  })
 
   it("Debería renderizar un <form>", () => {
     expect(contact.find("form")).toHaveLength(1);
-  });
+  })
 
   it("Debería renderizar un label para el nombre con el texto 'Nombre:'", () => {
     expect(contact.find("label").at(0).text()).toEqual("Nombre:");

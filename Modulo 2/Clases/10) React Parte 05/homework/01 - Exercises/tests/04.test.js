@@ -20,16 +20,16 @@ describe("04 | Ejercicios", () => {
   beforeAll(() => {
     alert = window.alert;
     window.alert = jest.fn();
-  });
+  })
 
   afterAll(() => {
     window.alert = alert;
-  });
+  })
 
   it("Debe mostrar un alert 'Debe llenar todos los campos' cuando haya un error en el formulario", () => {
     contact.find("form").simulate("submit", { preventDefault: () => {} });
     expect(window.alert).toHaveBeenCalledWith("Debe llenar todos los campos");
-  });
+  })
 
   it("Debería mostrar un alert 'Datos completos' al hacer submit correctamente", () => {
     contact.find("input[name='name']").simulate("change", {
@@ -37,29 +37,29 @@ describe("04 | Ejercicios", () => {
         name: "name",
         value: "Henry",
       },
-    });
+    })
 
     contact.find("input[name='email']").simulate("change", {
       target: {
         name: "email",
         value: "henry@gmail.com",
       },
-    });
+    })
 
     contact.find("textarea[name='message']").simulate("change", {
       target: {
         name: "message",
         value: "Mensaje Henry",
       },
-    });
+    })
 
     contact.find("form").simulate("submit", { preventDefault: () => {} });
     expect(window.alert).toHaveBeenCalledWith("Datos completos");
-  });
+  })
 
   it("Debería ejecutar e.preventDefault() al hacer submit", () => {
     onSubmit = contact.find("form").prop("onSubmit");
     onSubmit({ preventDefault: handleSubmit });
     expect(handleSubmit).toHaveBeenCalled();
-  });
-});
+  })
+})

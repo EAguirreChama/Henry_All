@@ -6,12 +6,12 @@ function DinamicInputs() {
   const modeloFamiliar = { nombre: '' };
   const [familiar, setFamiliar] = useState([
     { ...modeloFamiliar },
-  ]);
+  ])
 
   const [persona, setPersona] = useState({
     nombre: '',
-  });
-
+  })
+  
   const agregaFamiliar = () => {
       setFamiliar([...familiar, { ...modeloFamiliar }]);
   };

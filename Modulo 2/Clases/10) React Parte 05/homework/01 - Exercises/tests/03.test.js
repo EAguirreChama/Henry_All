@@ -83,7 +83,7 @@ describe("03 | Ejercicios", () => {
       });
       input = contact.find("input[name='name']");
       expect(input.hasClass("warning")).toBeFalsy();
-    });
+    })
 
     it("Si el email tiene errores, el input debe tener una clase 'warning'. Cuando estos errores desaparezcan, el input NO debe tener la clase 'warning'", () => {
       contact.find("input[name='email']").simulate("change", {
@@ -103,7 +103,7 @@ describe("03 | Ejercicios", () => {
       });
       input = contact.find("input[name='email']");
       expect(input.hasClass("warning")).toBeFalsy();
-    });
+    })
 
     it("Si el mensaje tiene errores, el input debe tener una clase 'warning'. Cuando estos errores desaparezcan, el input NO debe tener la clase 'warning'", () => {
       contact.find("textarea[name='message']").simulate("change", {
@@ -123,6 +123,6 @@ describe("03 | Ejercicios", () => {
       });
       input = contact.find("textarea[name='message']");
       expect(input.hasClass("warning")).toBeFalsy();
-    });
-  });
-});
+    })
+  })
+})

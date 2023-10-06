@@ -1,8 +1,8 @@
-import React from "react";
-import { NavLink, Link } from "react-router-dom";
-import logo from "../../assets/logo.jpg";
-import logo_henry from "../../assets/logo_henry.png";
-import styleNav from "./NavBar.module.css";
+import React from "react"
+import { NavLink, Link } from "react-router-dom"
+import logo from "../../assets/logo.jpg"
+import logo_henry from "../../assets/logo_henry.png"
+import styleNav from "./NavBar.module.css"
 
 export default function NavBar() {
   return (

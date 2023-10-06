@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 // Este es el Form con inputs dinamicos que armamos en el README.md de la teoria.
 
@@ -66,4 +66,4 @@ function DinamicInputs() {
   );
 };
 
-export default DinamicInputs;
+export default DinamicInputs

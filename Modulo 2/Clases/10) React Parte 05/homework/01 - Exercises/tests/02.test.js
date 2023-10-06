@@ -7,7 +7,7 @@ import Adapter from "@wojtekmaj/enzyme-adapter-react-17"
 // Importamos variables/componentes
 import Contact from "../src/components/Contact/Contact"
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
 describe("02 | Ejercicios", () => {
   let contact;
@@ -21,14 +21,14 @@ describe("02 | Ejercicios", () => {
     inputs.forEach((i) => {
       expect(i.props().onChange).toBeDefined();
       expect(typeof i.props().onChange).toBe("function");
-    });
-  });
+    })
+  })
 
   it("Debería asignar la función 'handleChange' al 'onChange' del textarea", () => {
     const textArea = contact.find("textarea");
     expect(textArea.length).toBe(1);
     expect(typeof textArea.props().onChange).toBe("function");
-  });
+  })
 
   it("El form debería cambiar de estado cuando escriban en el input de name", () => {
     expect(contact.find("input[name='name']").prop("value")).toEqual("");
@@ -37,7 +37,7 @@ describe("02 | Ejercicios", () => {
     });
     const inputName = contact.find("input[name='name']");
     expect(inputName.prop("value")).toEqual("Henry");
-  });
+  })
 
   it("El form debería cambiar de estado cuando escriban en el input de email", () => {
     expect(contact.find("input[name='email']").prop("value")).toEqual("");

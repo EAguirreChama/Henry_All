@@ -1,13 +1,13 @@
 // Configuramos test
-import React from "react";
-import { configure, shallow } from "enzyme";
-import "@testing-library/jest-dom/extend-expect";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
+import React from "react"
+import { configure, shallow } from "enzyme"
+import "@testing-library/jest-dom/extend-expect"
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17"
 
 // Importamos variables/componentes/funciones
-import Contact, { validate } from "../src/components/Contact/Contact";
+import Contact, { validate } from "../src/components/Contact/Contact"
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
 describe("03 | Ejercicios", () => {
   let contact, input;

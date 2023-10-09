@@ -1,9 +1,9 @@
-const redux = require('redux')
-
 const createStore = redux.createStore
 
-const ADD_TODO = 'ADD_TODO'
+const redux = require('redux')
+
 const REMOVE_TODO = 'REMOVE_TODO'
+const ADD_TODO = 'ADD_TODO'
 
 const initialState = {
   todos: []
@@ -27,8 +27,8 @@ const rootReducer = (state = initialState, action) => {
 const store = createStore(rootReducer)
 
 store.subscribe(() => {
-  console.log('Subscription: ', store.getState());
-});
+  console.log('Subscription: ', store.getState())
+})
 
 function addTodo(text) {
   return {

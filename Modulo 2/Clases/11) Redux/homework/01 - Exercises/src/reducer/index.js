@@ -28,4 +28,4 @@ function contador(state = initialState, action) {
   }
 }
 
-module.exports = contador;
+module.exports = contador

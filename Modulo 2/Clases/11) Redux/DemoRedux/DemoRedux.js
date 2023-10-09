@@ -11,7 +11,6 @@
 // Unica fuente de verdad, es el store. Donde esta toda la info para manejar mi pagina.
 // El estado solo puede ser modificado mediante actions. (Las actions son objetos ==> propiedad obligatoria es un type: "siempre un string")
 
-
 // Reducer ==> es una funcion
 // Solo reducer puede hacer modificaciones en el estado global
 

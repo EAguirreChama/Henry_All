@@ -1,12 +1,12 @@
-const { incremento, decremento } = require("./actions");
-const { createStore } = require("redux");
-const contador = require("./reducer");
+const { incremento, decremento } = require("./actions")
+const { createStore } = require("redux")
+const contador = require("./reducer")
 
 // En esta línea creamos nuestro store. Pasándole como parámetro nuestro Reducer
-const store = createStore(contador);
+const store = createStore(contador)
 
 // Obtenemos el elemento con el id `valor`.
-const valor = document.querySelector("#valor");
+const valor = document.querySelector("#valor")
 
 // Esta función nos va a servir para actualizar nuestro DOM con el valor que tengamos en nuestro Store.
 // En el primer render y cada vez que nos subscribamos al Store.
@@ -20,7 +20,7 @@ function renderContador() {
 }
 
 // Ejecutamos la función 'renderContador':
-renderContador(); 
+renderContador();
 
 // Nos subscribimos al store pasándole la misma función. Así cada vez que llegue una acción, ejecutamos la función:
 

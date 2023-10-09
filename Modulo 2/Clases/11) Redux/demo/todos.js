@@ -1,10 +1,9 @@
-const redux = require('redux');
+const redux = require('redux')
 
-const createStore = redux.createStore;
+const createStore = redux.createStore
 
 const ADD_TODO = 'ADD_TODO'
-const REMOVE_TODO = 'REMOVE_TODO';
-
+const REMOVE_TODO = 'REMOVE_TODO'
 
 const initialState = {
   todos: []
@@ -21,11 +20,11 @@ const rootReducer = (state = initialState, action) => {
         todos: state.todos.filter((text, i) => i !== action.payload)
       }
     default:
-      return state;
+      return state
   }
 }
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer)
 
 store.subscribe(() => {
   console.log('Subscription: ', store.getState());

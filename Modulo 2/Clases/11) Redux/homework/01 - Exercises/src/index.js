@@ -28,10 +28,10 @@ store.subscribe(renderContador)
 
 // Por último, utilizamos los botones de nuestro HTML para que cada vez que hagamos click,
 // hagan un dispatch al store de la acción correspondiente:
+const incrementoAsync = document.querySelector("#uncrementoAsync")
+const incrementoImpar = document.querySelector("#incrementImpar")
 const botonIncremento = document.querySelector("#incremento")
 const botonDecremento = document.querySelector("#decremento")
-const incrementoImpar = document.querySelector("#incrementImpar")
-const incrementoAsync = document.querySelector("#uncrementoAsync")
 
 botonIncremento.addEventListener("click", () => {
   store.dispatch(incremento())

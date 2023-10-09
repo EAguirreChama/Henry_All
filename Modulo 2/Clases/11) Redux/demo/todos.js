@@ -46,7 +46,6 @@ function removeTodo(index) {
 
 store.dispatch(addTodo('Comprar pan'))
 store.dispatch(addTodo('Correr'))
-
 store.dispatch(removeTodo(1))
 
-console.log(store.getState());
+console.log(store.getState())

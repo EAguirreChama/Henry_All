@@ -12,19 +12,16 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 contador: state.contador + 1
             }
-        
         case "CAMBIAR_NOMBRE": 
             return {
                 ...state,
                 nombre: action.payload
             }
-
         case "MODIFICAR_AMIGOS":
             return {
                 ...state,
                 amigos: action.payload
             }
-
         case "MODIFICAR_APELLIDO":
             return {
                 ...state,

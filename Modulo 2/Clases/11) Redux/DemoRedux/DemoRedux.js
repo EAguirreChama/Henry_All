@@ -26,7 +26,7 @@
 // }
 
 // Primero crear mi Store
-// const { createStore } = require ("redux");
+// const { createStore } = require ("redux")
 
 // getState nos muestra el estado actual
-// console.log(store.getState());
+// console.log(store.getState())

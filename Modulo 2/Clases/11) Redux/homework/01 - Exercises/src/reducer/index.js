@@ -1,4 +1,4 @@
-const { INCREMENTO, DECREMENTO } = require('../action-types');
+const { INCREMENTO, DECREMENTO } = require('../action-types')
 
 const initialState = {
   contador: 0
@@ -14,12 +14,13 @@ function contador(state = initialState, action) {
       return{
         ...state,
         contador: state.contador +1
-      };
+      }
+      
     case DECREMENTO:
       return{
         ...state,
         contador:state.contador -1
-      };
+      }
 
     default:
       return{ 

@@ -11,6 +11,7 @@ const valor = document.querySelector("#valor");
 // Esta función nos va a servir para actualizar nuestro DOM con el valor que tengamos en nuestro Store.
 // En el primer render y cada vez que nos subscribamos al Store.
 // Utilizamos el elemento obtenido arriba para mostrar el State.
+
 function renderContador() {
   const valorActual = store.getState().contador
   valor.innerHTML = valorActual

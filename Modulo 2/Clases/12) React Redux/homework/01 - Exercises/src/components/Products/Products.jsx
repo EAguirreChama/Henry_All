@@ -18,7 +18,5 @@ export function Products() {
 }
 
 export function mapStateToProps() {}
-
 export function mapDispatchToProps() {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Products);
+export default connect(mapStateToProps, mapDispatchToProps)(Products)

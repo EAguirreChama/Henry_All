@@ -1,6 +1,6 @@
 // import Cards from './Componentes/Cards'
 import Contador from './Componentes/Contador'
-import './App.css';
+import './App.css'
 
 function App() {
   return (

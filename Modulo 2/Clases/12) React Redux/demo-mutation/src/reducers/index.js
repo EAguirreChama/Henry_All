@@ -1,8 +1,6 @@
 const initialState = {
   count: 0,
-  data: {
-
-  },
+  data: {},
   amigos: ["Franco", "Toni"],
 }
 
@@ -32,7 +30,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         amigos: state.amigos
-      };
+      }
       
     default:
       return {...state}

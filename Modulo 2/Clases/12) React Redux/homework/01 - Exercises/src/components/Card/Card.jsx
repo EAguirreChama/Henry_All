@@ -1,6 +1,6 @@
-import { connect } from 'react-redux';
-import React from 'react';
-import './card.css';
+import { connect } from 'react-redux'
+import React from 'react'
+import './card.css'
 
 export class Card extends React.Component{
    constructor(props){
@@ -15,8 +15,8 @@ export class Card extends React.Component{
             <button className='cardBtn'>X</button>
          </div>
       )
-   };
-};
+   }
+}
 
 export function mapDispatchToProps() {}
 

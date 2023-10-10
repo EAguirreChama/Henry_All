@@ -1,5 +1,5 @@
-// import Cards from './Componentes/Cards';
-import Contador from './Componentes/Contador';
+// import Cards from './Componentes/Cards'
+import Contador from './Componentes/Contador'
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div >
       <Contador/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

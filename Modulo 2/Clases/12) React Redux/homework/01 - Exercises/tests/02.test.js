@@ -101,6 +101,6 @@ describe("02 | Ejercicios", () => {
     expect(reducer(undefined, [])).toEqual({
       list: [],
       storeName: ""
-    });
-  });
-});
+    })
+  })
+})

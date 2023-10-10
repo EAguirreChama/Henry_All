@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Home from './Home';
-import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import store from './redux/store/index';
+import { Provider } from 'react-redux';
+import ReactDOM from 'react-dom';
+import React from 'react';
+import Home from './Home';
 
 ReactDOM.render(
    <Provider store={store}>
@@ -12,4 +12,4 @@ ReactDOM.render(
       </BrowserRouter>
    </Provider>,
    document.getElementById('root')
-);
+)

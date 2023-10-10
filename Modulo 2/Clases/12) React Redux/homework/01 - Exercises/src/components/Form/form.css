@@ -9,14 +9,12 @@
    font-family: Helvetica;
    background-color: rgb(247, 247, 247);
 }
-
 .inputBox {
    width: 75%;
    background-color: grey;
    display: flex;
    flex-direction: column;
 }
-
 .formBtn {
    width: 8rem;
    height: 2.5rem;
@@ -27,7 +25,6 @@
    letter-spacing: 0.1rem;
    cursor: pointer;
 }
-
 .logo {
    width: 60%;
 }

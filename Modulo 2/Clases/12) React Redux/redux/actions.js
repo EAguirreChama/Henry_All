@@ -1,14 +1,14 @@
-//incrementar en uno el counter
+// Incrementar en uno el counter
 const INCREMENTAR_COUNTER = {
  type: 'INCREMENTAR_COUNTER'
 }
 
-// decrementar en uno el counter
+// Decrementar en uno el counter
 const DECREMENTAR_COUNTER = {
   type: 'DECREMENTAR_COUNTER'
 }
 
-// action creator
+// Action creator
 function  increment(n) {
   return {
     type: 'INCREMENTAR_N',

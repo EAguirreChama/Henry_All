@@ -1,10 +1,10 @@
 // Configuramos test
-import "@testing-library/jest-dom/extend-expect";
-import React from "react";
+import "@testing-library/jest-dom/extend-expect"
+import React from "react"
 // Importamos variables/componentes/funciones
-import Connect, { mapDispatchToProps } from "../src/components/Card/Card";
-import { render, fireEvent, configure } from "@testing-library/react";
-const Card = Connect.WrappedComponent;
+import Connect, { mapDispatchToProps } from "../src/components/Card/Card"
+import { render, fireEvent, configure } from "@testing-library/react"
+const Card = Connect.WrappedComponent
 
 configure({
   getElementError: (message) => {
@@ -42,5 +42,5 @@ describe("05 | Ejercicios", () => {
     const button = getByText("X");
     fireEvent.click(button);
     expect(deleteProduct).toHaveBeenCalledWith(num);
-  });
-});
+  })
+})

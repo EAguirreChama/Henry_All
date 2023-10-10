@@ -1,8 +1,8 @@
 // Configuramos test
-import React from "react";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import "@testing-library/jest-dom/extend-expect";
 import { configure, mount } from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
+import React from "react";
 // Importamos variables/componentes/funciones
 import { mapStateToProps, Products, mapDispatchToProps } from "../src/components/Products/Products";
 import * as actions from '../src/redux/actions/actions';

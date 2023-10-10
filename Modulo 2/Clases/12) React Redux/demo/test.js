@@ -11,6 +11,7 @@ function isSumPossibleZ(numbers, expectedSum, numbersToSum, sum = 0) {
   const withoutNumber = isSumPossibleZ(newNumbers, expectedSum, numbersToSum , sum);
   return withNumber || withoutNumber;
 }
+
 let invocation = 0;
 function isSumPossibleZMemo(numbers, expectedSum, numbersToSum, sum = 0, memo = {}) {
   invocation++;
@@ -41,11 +42,11 @@ function isSumPossibleZ2(numbers, expectedSum, numbersToSum) {
       possibleSums.push({ sum, ns });
     }
   }
-  return 0;
+  return 0
 }
 
 invocation =0
-console.log(isSumPossibleZMemo([40,55,60,62,18,11,21,28,31,38,40,55,60,62], 50, 3) == 1, invocation);
+console.log(isSumPossibleZMemo([40,55,60,62,18,11,21,28,31,38,40,55,60,62], 50, 3) == 1, invocation)
 invocation =0
 console.log(isSumPossibleZMemo([18,11,21,28,31,38,40,55,60,62], 10, 2) == 0 ,invocation)
 invocation =0

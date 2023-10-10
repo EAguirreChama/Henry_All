@@ -1,11 +1,11 @@
 // Configuramos test
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import "@testing-library/jest-dom/extend-expect";
-import { configure, mount } from "enzyme";
-import React from "react";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17"
+import "@testing-library/jest-dom/extend-expect"
+import { configure, mount } from "enzyme"
+import React from "react"
 // Importamos variables/componentes/funciones
-import { mapStateToProps, Products, mapDispatchToProps } from "../src/components/Products/Products";
-import * as actions from '../src/redux/actions/actions';
+import { mapStateToProps, Products, mapDispatchToProps } from "../src/components/Products/Products"
+import * as actions from '../src/redux/actions/actions'
 
 jest.mock('../src/redux/actions/actions', () => ({
   getStoreName: () => ({ type: "GET_STORE_NAME" })
@@ -95,6 +95,6 @@ describe('04 | Ejercicios', () => {
       expect(card.prop('price')).toEqual(list[i].price);
       expect(card.prop('id')).toEqual(list[i].id);
       expect(card.key()).toBeDefined();
-    });
-  });
-});
+    })
+  })
+})

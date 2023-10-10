@@ -1,10 +1,10 @@
-import { fetchPost } from '../actions/index.js';
-import * as actionsCreators from '../actions';
-import { bindActionCreators } from 'redux';
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import store from '../store.js';
-import axios from 'axios';
+import { fetchPost } from '../actions/index.js'
+import * as actionsCreators from '../actions'
+import { bindActionCreators } from 'redux'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import store from '../store.js'
+import axios from 'axios'
 
 const Counter = ({ counter, increment, decrement, reset, fetchPost}) => (
       <p>
@@ -29,10 +29,10 @@ const Counter = ({ counter, increment, decrement, reset, fetchPost}) => (
 
 const mapStateToProps = (state) => ({
   counter: state.count,
-});
+})
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(actionsCreators, dispatch);
+  return bindActionCreators(actionsCreators, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Counter);
+export default connect(mapStateToProps, mapDispatchToProps)(Counter)

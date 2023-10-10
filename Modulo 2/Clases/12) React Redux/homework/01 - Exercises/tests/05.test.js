@@ -1,6 +1,6 @@
 // Configuramos test
-import React from "react";
 import "@testing-library/jest-dom/extend-expect";
+import React from "react";
 // Importamos variables/componentes/funciones
 import Connect, { mapDispatchToProps } from "../src/components/Card/Card";
 import { render, fireEvent, configure } from "@testing-library/react";

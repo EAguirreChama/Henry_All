@@ -61,6 +61,6 @@ describe("02 | Ejercicios", () => {
         payload: data.store.name,
       });
       nock.cleanAll();
-    });
-  });
-});
+    })
+  })
+})

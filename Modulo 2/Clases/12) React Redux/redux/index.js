@@ -1,6 +1,6 @@
-const Store = require('./store.js');
-const reducer = require('./reducer.js');
 const { INCREMENTAR_COUNTER,  DECREMENTAR_COUNTER, increment } = require('./actions.js');
+const reducer = require('./reducer.js');
+const Store = require('./store.js');
 
 const store = new Store(0, reducer);
 
@@ -11,7 +11,6 @@ store.dispatch( DECREMENTAR_COUNTER  )
 console.log(store.getState()); //0
 store.dispatch( increment(10)  )
 console.log(store.getState()); //10
-
 
 var unsuscribe = store.suscribe( function() {
     console.log(store.getState());

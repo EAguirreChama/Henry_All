@@ -11,7 +11,7 @@ class Friends extends Component {
           this.props.amigos.map((amigo, i) => <p key={i}>{amigo}</p>)}
         <button onClick={this.props.addFriend}>ADD FRIEND TITO</button>
       </div>
-    );
+    )
   }
 }
 
@@ -19,7 +19,7 @@ const mapStateToProps = (state) => {
   return {
     count: state.count,
     amigos: state.amigos,
-  };
-};
+  }
+}
 
 export default connect(mapStateToProps, { addFriend })(Friends)

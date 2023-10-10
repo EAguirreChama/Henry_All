@@ -1,6 +1,6 @@
-import { connect } from 'react-redux';
-import React from 'react';
-import './products.css';
+import { connect } from 'react-redux'
+import React from 'react'
+import './products.css'
 // import Card from '../Card/Card'
 
 export function Products() {
@@ -14,7 +14,7 @@ export function Products() {
             </div>
          </div>
       </>
-   );
+   )
 }
 
 export function mapStateToProps() {}

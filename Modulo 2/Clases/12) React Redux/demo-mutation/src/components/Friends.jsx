@@ -1,7 +1,7 @@
-import { addFriend } from "../actions/index.js";
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import store from "../store.js";
+import { addFriend } from "../actions/index.js"
+import React, { Component } from "react"
+import { connect } from "react-redux"
+import store from "../store.js"
 
 class Friends extends Component {
   render() {

@@ -6,7 +6,6 @@
    align-items: center;
    background-image: url('../../assets/supermercado.webp');
 }
-
 .productsTl {
    font-family: Helvetica;
    letter-spacing: 0.5rem;
@@ -18,7 +17,6 @@
    justify-content: center;
    align-items: center;
 }
-
 .productsList {
    height: 80vh;
    width: 60vw;

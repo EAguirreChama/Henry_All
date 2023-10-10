@@ -1,7 +1,7 @@
-import Products from './components/Products/Products';
-import Form from './components/Form/Form';
-import React from 'react';
-import './home.css';
+import Products from './components/Products/Products'
+import Form from './components/Form/Form'
+import React from 'react'
+import './home.css'
 
 export default function Home() {
    return (
@@ -9,5 +9,5 @@ export default function Home() {
          <Products />
          <Form />
       </div>
-   );
+   )
 }

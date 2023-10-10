@@ -1,7 +1,7 @@
+import { addFriend } from "../actions/index.js";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import store from "../store.js";
-import { addFriend } from "../actions/index.js";
 
 class Friends extends Component {
   render() {
@@ -22,4 +22,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { addFriend })(Friends);
+export default connect(mapStateToProps, { addFriend })(Friends)

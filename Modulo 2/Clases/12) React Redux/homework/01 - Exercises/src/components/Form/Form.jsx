@@ -1,6 +1,6 @@
+import Caja from '../../assets/caja.png';
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import Caja from '../../assets/caja.png';
 import './form.css';
 
 class Form extends React.Component{
@@ -47,4 +47,4 @@ class Form extends React.Component{
 
 export function mapDispatchToProps() {}
 
-export default connect(null, mapDispatchToProps)(Form);
+export default connect(null, mapDispatchToProps)(Form)

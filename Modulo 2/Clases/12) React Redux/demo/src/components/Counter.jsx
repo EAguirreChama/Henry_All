@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import store from '../store.js';
+import { fetchPost } from '../actions/index.js';
 import * as actionsCreators from '../actions';
 import { bindActionCreators } from 'redux';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchPost } from '../actions/index.js';
+import store from '../store.js';
 import axios from 'axios';
-
 
 const Counter = ({ counter, increment, decrement, reset, fetchPost}) => (
       <p>

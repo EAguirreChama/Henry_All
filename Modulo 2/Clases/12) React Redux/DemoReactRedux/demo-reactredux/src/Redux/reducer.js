@@ -1,4 +1,4 @@
-import { aumentarContador } from "./actions";
+import { aumentarContador } from "./actions"
 
 const initialState = {
     contador: 0,
@@ -18,4 +18,4 @@ const reducer = (state = initialState, action) => {
     }
 }
 
-export default reducer;
+export default reducer

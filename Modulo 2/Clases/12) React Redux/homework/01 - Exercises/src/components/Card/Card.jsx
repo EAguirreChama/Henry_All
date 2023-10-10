@@ -20,4 +20,4 @@ export class Card extends React.Component{
 
 export function mapDispatchToProps() {}
 
-export default connect(null, mapDispatchToProps)(Card);
+export default connect(null, mapDispatchToProps)(Card)

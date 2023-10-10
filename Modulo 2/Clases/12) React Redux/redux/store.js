@@ -1,4 +1,3 @@
-
 function Store(estadoInicial, reducer) {
   this._state = estadoInicial;
   this.reducer = reducer;
@@ -23,4 +22,4 @@ Store.prototype.suscribe = function suscribe(listener) {
   }
 }
 
-module.exports = Store;
+module.exports = Store

@@ -1,6 +1,6 @@
-const { INCREMENTAR_COUNTER,  DECREMENTAR_COUNTER, increment } = require('./actions.js');
-const reducer = require('./reducer.js');
-const Store = require('./store.js');
+const { INCREMENTAR_COUNTER,  DECREMENTAR_COUNTER, increment } = require('./actions.js')
+const reducer = require('./reducer.js')
+const Store = require('./store.js')
 
 const store = new Store(0, reducer);
 
@@ -22,7 +22,7 @@ store.dispatch( INCREMENTAR_COUNTER  ); // 11
 store.dispatch( INCREMENTAR_COUNTER  ); // 12
 store.dispatch( DECREMENTAR_COUNTER  ); // 11
 
-unsuscribe(); // dejamos de recibir notificaciones;
+unsuscribe(); // dejamos de recibir notificaciones
 
 store.dispatch( DECREMENTAR_COUNTER  );
 // console.log(store.getState()); // 10

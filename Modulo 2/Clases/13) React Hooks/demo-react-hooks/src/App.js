@@ -1,7 +1,7 @@
-import Characters from './Componentes/Characters';
-import Contador from './Componentes/Contador';
-import { useState } from 'react';
-import './App.css';
+import Characters from './Componentes/Characters'
+import Contador from './Componentes/Contador'
+import { useState } from 'react'
+import './App.css'
 
 function App() {
   const [show, setShow] = useState({

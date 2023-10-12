@@ -1,6 +1,6 @@
-import { connect } from 'react-redux';
-import { saveName } from '../actions';
-import React from 'react';
+import { connect } from 'react-redux'
+import { saveName } from '../actions'
+import React from 'react'
 
 class AppClass extends React.Component {
   constructor(props) {
@@ -9,8 +9,8 @@ class AppClass extends React.Component {
       name: 'Class',
       width: window.innerWidth
     }
-    this.handleNameChange = this.handleNameChange.bind(this);
-    this.handleResize = this.handleResize.bind(this);
+    this.handleNameChange = this.handleNameChange.bind(this)
+    this.handleResize = this.handleResize.bind(this)
   }
 
   componentDidMount() {
@@ -19,7 +19,7 @@ class AppClass extends React.Component {
   }
 
   componentDidUpdate() {
-    document.title = this.state.name;
+    document.title = this.state.name
   }
 
   componentWillUnmount() {
@@ -37,6 +37,7 @@ class AppClass extends React.Component {
       name: e.target.value
     })
   }
+  
   render() {
     return (
       <div className="App">
@@ -70,4 +71,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, { saveName })(AppClass);
+export default connect(mapStateToProps, { saveName })(AppClass)

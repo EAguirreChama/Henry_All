@@ -1,12 +1,12 @@
-import React from "react";
-import "@testing-library/jest-dom/extend-expect";
-import { mount, configure } from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import ContactUs from "../src/components/ContactUs/ContactUs";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
+import "@testing-library/jest-dom/extend-expect";
 import configureStore from 'redux-mock-store';
+import { mount, configure } from "enzyme";
 import { Provider } from "react-redux";
+import React from "react";
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
 describe("01 | Ejercicios", () => {
   let contactUs, useState, useStateSpy;

@@ -1,8 +1,8 @@
-import InfoEnviada from './components/InfoEnviada/InfoEnviada';
-import ContactUs from './components/ContactUs/ContactUs';
-import CopyData from './components/CopyData/CopyData';
-import React from 'react';
-import './home.css';
+import InfoEnviada from './components/InfoEnviada/InfoEnviada'
+import ContactUs from './components/ContactUs/ContactUs'
+import CopyData from './components/CopyData/CopyData'
+import React from 'react'
+import './home.css'
 
 export default function Home() {
    return (
@@ -13,5 +13,5 @@ export default function Home() {
             <InfoEnviada />
          </div>
       </div>
-   );
+   )
 }

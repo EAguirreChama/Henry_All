@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import AppHooks from './AppHooks';
-import AppClass from './AppClass';
+import React, { useState } from 'react'
+import AppHooks from './AppHooks'
+import AppClass from './AppClass'
 
 export default function App() {
   const [useHook, setUseHook] = useState(true);

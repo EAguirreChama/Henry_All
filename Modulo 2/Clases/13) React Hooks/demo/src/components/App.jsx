@@ -3,8 +3,8 @@ import AppHooks from './AppHooks'
 import AppClass from './AppClass'
 
 export default function App() {
-  const [useHook, setUseHook] = useState(true);
-  const [show, setShow] = useState(true);
+  const [useHook, setUseHook] = useState(true)
+  const [show, setShow] = useState(true)
 
   const componentShown = useHook ? <AppHooks /> : <AppClass />;
 

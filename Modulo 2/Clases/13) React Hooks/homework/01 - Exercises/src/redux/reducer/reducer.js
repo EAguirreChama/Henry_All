@@ -1,7 +1,7 @@
 const initialState = {
   formulario: {},
-};
+}
 
-const rootReducer = (state = initialState, { type, payload }) => {};
+const rootReducer = (state = initialState, { type, payload }) => {}
 
-export default rootReducer;
+export default rootReducer

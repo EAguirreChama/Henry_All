@@ -1,5 +1,5 @@
-import { GET_CHARACTERS } from "./Action_types";
 import { CLEAN_CHARACTERS } from "./Action_types";
+import { GET_CHARACTERS } from "./Action_types";
 
 export const getCharacters = () => {
     return function(dispatch) {

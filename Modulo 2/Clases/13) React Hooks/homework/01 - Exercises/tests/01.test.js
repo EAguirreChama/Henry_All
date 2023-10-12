@@ -1,10 +1,10 @@
-import ContactUs from "../src/components/ContactUs/ContactUs";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import "@testing-library/jest-dom/extend-expect";
-import configureStore from 'redux-mock-store';
-import { mount, configure } from "enzyme";
-import { Provider } from "react-redux";
-import React from "react";
+import ContactUs from "../src/components/ContactUs/ContactUs"
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17"
+import "@testing-library/jest-dom/extend-expect"
+import configureStore from 'redux-mock-store'
+import { mount, configure } from "enzyme"
+import { Provider } from "react-redux"
+import React from "react"
 
 configure({ adapter: new Adapter() })
 

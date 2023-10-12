@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
-import { saveName } from '../actions';
+import React, { useState, useEffect } from 'react'
+import { saveName } from '../actions'
 
 export default function AppHooks() {
   const [name, setName] = useState('Hooks');

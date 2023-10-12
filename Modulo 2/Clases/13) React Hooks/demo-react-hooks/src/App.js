@@ -7,14 +7,14 @@ function App() {
   const [show, setShow] = useState({
     contador: true,
     characters: true
-  });
+  })
 
   const toggle = (event) => {
     setShow({
       ...show,
       [event.target.name]: !show[event.target.name]
     })
-  };
+  }
 
   return (
     <div className="App">
@@ -23,7 +23,7 @@ function App() {
       <button onClick={toggle} name="characters">{show.characters ? "Hide" : "Show"}</button>
       {show.characters && <Characters/>}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

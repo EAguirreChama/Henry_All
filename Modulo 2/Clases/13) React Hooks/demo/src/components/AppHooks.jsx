@@ -43,11 +43,10 @@ export default function AppHooks() {
         {nameRedux}
       </div>
     </div>
-  );
+  )
 }
 
 // Custom Hooks
-
 // function useWindowWidth() {
 //   const [width, setWidth] = useState(window.innerWidth);
 //   useEffect(() => {

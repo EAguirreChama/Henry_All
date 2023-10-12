@@ -1,11 +1,11 @@
-import React from "react";
-import * as ReactRedux from "react-redux";
-import "@testing-library/jest-dom/extend-expect";
-import { mount, configure } from "enzyme";
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import InfoEnviada from "../src/components/InfoEnviada/InfoEnviada";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
+import "@testing-library/jest-dom/extend-expect";
 import configureStore from "redux-mock-store";
+import { mount, configure } from "enzyme";
+import * as ReactRedux from "react-redux";
 import { Provider } from "react-redux";
+import React from "react";
 
 configure({ adapter: new Adapter() });
 

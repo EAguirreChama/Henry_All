@@ -1,4 +1,4 @@
-import { GET_CHARACTERS, CLEAN_CHARACTERS} from "./Action_types";
+import { GET_CHARACTERS, CLEAN_CHARACTERS} from "./Action_types"
 
 const initialState = {
     characters: [],
@@ -27,4 +27,4 @@ const reducer = (state = initialState, action) => {
     }
 }
 
-export default reducer;
+export default reducer

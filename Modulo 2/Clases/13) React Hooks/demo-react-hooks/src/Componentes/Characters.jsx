@@ -2,7 +2,6 @@ import { getCharacters, cleanCharacters} from "../Redux/Action";
 import {useDispatch, useSelector} from "react-redux"
 import { useEffect } from "react";
 
-
 const Characters = () => {
     const Dispatch = useDispatch();
     const characters = useSelector(state => state.characters);

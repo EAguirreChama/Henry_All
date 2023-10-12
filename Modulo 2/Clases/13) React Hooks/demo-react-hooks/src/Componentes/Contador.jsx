@@ -5,11 +5,11 @@ const Contador = () => {
 
     const incrementar = () => {
         setCount(count + 1)
-    };
+    }
 
     const decrementar = () => {
         setCount(count - 1)
-    };
+    }
 
     useEffect(() => {
         if(count === 10) setCount(0)
@@ -26,4 +26,4 @@ const Contador = () => {
     )
 }
 
-export default Contador;
+export default Contador

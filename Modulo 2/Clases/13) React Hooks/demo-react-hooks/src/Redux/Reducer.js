@@ -7,11 +7,13 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
     switch(action.type){
+            
         case GET_CHARACTERS:
             return{
                 ...state,
                 characters: action.payload
             }
+            
         case CLEAN_CHARACTERS:
             return{
                 ...state,

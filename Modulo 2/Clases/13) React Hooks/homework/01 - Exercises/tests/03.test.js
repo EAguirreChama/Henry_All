@@ -7,7 +7,7 @@ import * as ReactRedux from "react-redux"
 import { Provider } from "react-redux"
 import React from "react"
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
 describe("03 | Ejercicios", () => {
   const mockStore = configureStore();
@@ -20,15 +20,15 @@ describe("03 | Ejercicios", () => {
         nombre: "",
         email: "",
       },
-    });
+    })
     const useSelectorSpy = jest.spyOn(ReactRedux, "useSelector");
     mount(
       <Provider store={store}>
         <InfoEnviada />
       </Provider>
-    );
+    )
     expect(useSelectorSpy).toHaveBeenCalled();
-  });
+  })
   it("Debería guardar los datos del store en un estado local", () => {
     useState = jest.fn();
     useStateSpy = jest.spyOn(React, "useState");
@@ -40,7 +40,7 @@ describe("03 | Ejercicios", () => {
         mensaje: "",
       },
       useState,
-    ]);
+    ])
     const store = mockStore({
       formulario: {
         mensaje: "",
@@ -48,17 +48,17 @@ describe("03 | Ejercicios", () => {
         nombre: "",
         email: "",
       },
-    });
+    })
     mount(
       <Provider store={store}>
         <InfoEnviada />
       </Provider>
-    );
+    )
     expect(useStateSpy).toHaveBeenCalledWith({
       mensaje: "",
       asunto: "",
       nombre: "",
       email: "",
-    });
-  });
-});
+    })
+  })
+})

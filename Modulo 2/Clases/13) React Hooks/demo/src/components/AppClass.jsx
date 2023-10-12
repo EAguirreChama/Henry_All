@@ -1,6 +1,6 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import { saveName } from '../actions';
+import React from 'react';
 
 class AppClass extends React.Component {
   constructor(props) {

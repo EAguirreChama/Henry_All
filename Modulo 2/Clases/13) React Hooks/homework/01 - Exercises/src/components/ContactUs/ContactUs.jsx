@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const ContactUs = () => {
   return (
@@ -19,7 +19,7 @@ const ContactUs = () => {
         <button>Enviar</button>
       </form>
     </div>
-  );
-};
+  )
+}
 
 export default ContactUs
